@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
+import Page from "../components/Page";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1 className="text-gray-500">Hello World!</h1>
-    </div>
+    <Page title="Home">
+      <h1>Hello World!</h1>
+    </Page>
   );
 };
 
