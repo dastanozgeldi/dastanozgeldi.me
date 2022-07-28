@@ -4,13 +4,13 @@ export default function Bio() {
   return (
     <Section title="Bio">
       <div className="indent-0">
-        2019 - Introduction to Programming, Python
+        <span>2019</span> - Introduction to Programming, Python
         <br />
-        2020 - Coding Discord Bots w/ Discord.py
+        <span>2020</span> - Coding Discord Bots w/ Discord.py
         <br />
-        2021 - Building CLI tools, Simple Games w/ Pygame
+        <span>2021</span> - Building CLI tools, Simple Games w/ Pygame
         <br />
-        2022 - Web Development
+        <span>2022</span> - Web Development
       </div>
     </Section>
   );

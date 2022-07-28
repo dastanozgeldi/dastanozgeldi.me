@@ -13,11 +13,14 @@
   h2 {
     @apply font-bold text-xl;
   }
+  span {
+    @apply text-secondary font-bold;
+  }
 }
 
 @layer components {
   .contact {
-    @apply max-w-max rounded-md text-teal-300 py-2 px-3 hover:bg-[#303030] hover:duration-500;
+    @apply max-w-max rounded-md text-primary py-2 px-3 hover:bg-[#303030] hover:duration-500;
   }
   .contact > a {
     @apply flex items-center gap-2;

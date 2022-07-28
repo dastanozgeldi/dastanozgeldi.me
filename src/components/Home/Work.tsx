@@ -7,10 +7,10 @@ export default function Work() {
       <p className="indent-4">
         I&apos;m a high-school sophomore with a passion for building different
         kinds of software. I&apos;m also the co-founder of software development
-        teams like `Jolshylar` and `DBD`
+        teams like <span>`Jolshylar`</span> and <span>`DBD`</span>
       </p>
       <div className="text-center mt-4">
-        <button className="rounded-md text-black bg-teal-300">
+        <button className="rounded-md text-black bg-primary">
           <a
             className="flex gap-2 items-center py-2 px-8"
             href="https://github.com/Dositan"
