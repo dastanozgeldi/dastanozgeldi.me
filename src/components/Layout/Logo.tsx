@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import hoof from "../assets/hoof.png";
+import hoof from "../../assets/hoof.png";
 
 export default function Logo() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Page from "../../components/Page";
+import Page from "../../components/Layout/Page";
 import { getSortedPostsData } from "../../lib/posts";
 
 export default function Posts({ posts }: { posts: Post[] }) {

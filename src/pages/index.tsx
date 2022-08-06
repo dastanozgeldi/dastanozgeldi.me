@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Page from "../components/Page";
+import Page from "../components/Layout/Page";
 import Profile from "../components/Home/Profile";
 import Work from "../components/Home/Work";
 import Bio from "../components/Home/Bio";

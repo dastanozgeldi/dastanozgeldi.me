@@ -17,7 +17,7 @@
     @apply text-secondary font-bold;
   }
   header a {
-    @apply hover:bg-black hover:duration-500 p-2 rounded-full;
+    @apply hover:bg-[#303030] hover:duration-500 p-2 rounded-full;
   }
 }
 

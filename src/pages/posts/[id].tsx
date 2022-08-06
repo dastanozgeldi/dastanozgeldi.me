@@ -1,4 +1,4 @@
-import Page from "../../components/Page";
+import Page from "../../components/Layout/Page";
 import { getAllPostsIds, getPostData } from "../../lib/posts";
 
 export default function Post({
