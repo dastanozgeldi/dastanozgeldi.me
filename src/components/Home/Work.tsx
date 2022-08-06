@@ -1,5 +1,5 @@
 import Section from "../Section";
-import { ExternalLinkIcon } from "@heroicons/react/outline";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function Work() {
   return (
@@ -15,7 +15,7 @@ export default function Work() {
             className="flex gap-2 items-center py-2 px-8"
             href="https://github.com/Dositan"
           >
-            GitHub <ExternalLinkIcon width={20} height={20} />
+            GitHub <BiLinkExternal width={20} height={20} />
           </a>
         </button>
       </div>

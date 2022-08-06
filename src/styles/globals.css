@@ -16,6 +16,9 @@
   span {
     @apply text-secondary font-bold;
   }
+  header a {
+    @apply hover:bg-black hover:duration-500 p-2 rounded-full;
+  }
 }
 
 @layer components {
