@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply text-white bg-bg;
+    @apply text-white bg-bg max-w-[76ch] mx-auto;
   }
   h1 {
     @apply font-bold text-4xl;
@@ -19,10 +19,33 @@
 }
 
 @layer components {
+  /* Contact Info */
   .contact {
     @apply max-w-max rounded-md text-primary py-2 px-3 hover:bg-[#303030] hover:duration-500;
   }
   .contact > a {
     @apply flex items-center gap-2;
+  }
+  /* Posts */
+  .post {
+    @apply mt-4;
+  }
+  .post h1 {
+    @apply text-2xl underline underline-offset-[6px] decoration-4 decoration-[#303030] my-4;
+  }
+  .post p {
+    @apply indent-4;
+  }
+  .post hr {
+    @apply my-4;
+  }
+  .post img {
+    @apply rounded-md border-white border-2;
+  }
+  .post a {
+    @apply text-primary font-bold;
+  }
+  .post strong {
+    @apply text-secondary;
   }
 }

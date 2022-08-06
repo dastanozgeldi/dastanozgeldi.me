@@ -10,7 +10,7 @@ export default function Page({
 }) {
   const t = `${title} | Dastan Ozgeldi`;
   return (
-    <article className="p-4">
+    <article className="p-4 max-w-[60ch] mx-auto">
       {title && (
         <Head>
           <title>{t}</title>

@@ -3,7 +3,7 @@ import profilePicture from "../../assets/profile.jpg";
 
 export default function Profile() {
   return (
-    <div className="sm:flex my-4">
+    <div className="sm:flex sm:items-center sm:gap-10 my-4">
       <div>
         <h1>Dastan Ozgeldi</h1>
         <p>Digital Nomad ( Sophomore / Developer / Procrastinator )</p>

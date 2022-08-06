@@ -7,7 +7,7 @@ export default function Work() {
       <p className="indent-4">
         I&apos;m a high-school sophomore with a passion for building different
         kinds of software. I&apos;m also the co-founder of software development
-        teams like <span>`Jolshylar`</span> and <span>`DBD`</span>
+        teams like <span>`Jolshylar`</span> and <span>`DBD`</span>.
       </p>
       <div className="text-center mt-4">
         <button className="rounded-md text-black bg-primary">
