@@ -9,7 +9,7 @@ import Contacts from "../components/Home/Contacts";
 const Home: NextPage = () => {
   return (
     <Page title="Home">
-      <div className="bg-[#303030] mt-4 mb-8 rounded-xl px-8 py-4">
+      <div className="bg-[#303030] mt-4 mb-8 rounded-xl px-8 py-4 text-center">
         Salem! I&apos;m a full-stack developer from Kazakhstan
       </div>
       <Profile />
