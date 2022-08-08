@@ -10,7 +10,7 @@ export default function TechStack() {
       <p>
         My recent project is called{" "}
         <a
-          className="font-bold text-primary"
+          className="font-bold text-teal-400"
           href="https://tapsyr.dosek.xyz"
           target="_blank"
           rel="noreferrer"

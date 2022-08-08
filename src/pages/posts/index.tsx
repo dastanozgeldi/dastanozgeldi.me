@@ -1,16 +1,20 @@
 import Link from "next/link";
 import Page from "../../components/Layout/Page";
+import Notification from "../../components/Notification";
 import { getSortedPostsData } from "../../lib/posts";
 
 export default function Posts({ posts }: { posts: Post[] }) {
   return (
     <Page title="Posts">
-      <h1 className="text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-teal-800">
-        I like to write.
-      </h1>
+      <Notification>
+        I enjoy writing about my progress throughout some period of time.
+      </Notification>
       {posts &&
         posts.map(({ id, data }: Post) => (
-          <div className="border-white border-2 rounded-xl my-4" key={id}>
+          <div
+            className="border-gray-900 dark:border-white my-8 border-2 rounded-2xl"
+            key={id}
+          >
             {/* eslint-disable @next/next/no-img-element */}
             <img
               className="rounded-t-xl border-b-2"
@@ -20,7 +24,7 @@ export default function Posts({ posts }: { posts: Post[] }) {
             <div className="text-center p-4">
               <Link href={`/posts/${id}`}>
                 <a>
-                  <span>{data.date}</span> - {data.title}
+                  <span className="highlight">{data.date}</span> - {data.title}
                 </a>
               </Link>
             </div>

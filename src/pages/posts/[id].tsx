@@ -9,7 +9,7 @@ export default function Post({
   return (
     <Page title={postData.data.title}>
       <article>
-        <h1 className="text-center text-2xl sm:text-4xl">
+        <h1 className="text-center font-extrabold text-2xl sm:text-4xl">
           {postData.data.title}
         </h1>
         <p className="text-center">{postData.data.date}</p>

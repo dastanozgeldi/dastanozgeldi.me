@@ -9,7 +9,7 @@ export default function Section({
 }) {
   return (
     <div className="my-8">
-      <h2 className="underline underline-offset-[6px] decoration-4 decoration-[#303030] mb-4">
+      <h2 className="font-bold text-2xl underline underline-offset-[6px] decoration-4 mb-4">
         {title}
       </h2>
       {children}

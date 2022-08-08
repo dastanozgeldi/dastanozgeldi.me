@@ -1,19 +1,20 @@
 import type { NextPage } from "next";
 import Page from "../components/Layout/Page";
 import Profile from "../components/Home/Profile";
-import Work from "../components/Home/Work";
+import About from "../components/Home/About";
 import Bio from "../components/Home/Bio";
 import TechStack from "../components/Home/TechStack";
 import Contacts from "../components/Home/Contacts";
+import Notification from "../components/Notification";
 
 const Home: NextPage = () => {
   return (
     <Page title="Home">
-      <div className="bg-[#303030] mt-4 mb-8 rounded-xl px-8 py-4">
-        Salem! I&apos;m a full-stack developer from Kazakhstan
-      </div>
+      <Notification>
+        Salem! I&apos;m a full-stack developer from Almaty, Kazakhstan.
+      </Notification>
       <Profile />
-      <Work />
+      <About />
       <Bio />
       <TechStack />
       <Contacts />

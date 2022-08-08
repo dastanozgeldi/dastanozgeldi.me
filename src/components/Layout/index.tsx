@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import Header from "./Header";
+import Navbar from "./Navbar";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <title>Dastan Ozgeldi - Homepage</title>
       </Head>
-      <Header />
+      <Navbar />
       {children}
     </main>
   );

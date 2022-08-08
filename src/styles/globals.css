@@ -2,29 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}
+
 @layer base {
   html,
   body {
-    @apply text-white bg-bg max-w-[76ch] mx-auto;
-  }
-  h1 {
-    @apply font-bold text-4xl;
-  }
-  h2 {
-    @apply font-bold text-xl;
-  }
-  span {
-    @apply text-secondary font-bold;
-  }
-  header a {
-    @apply hover:bg-[#303030] hover:duration-500 p-2 rounded-full;
+    @apply max-w-[76ch] mx-auto;
   }
 }
 
 @layer components {
+  .highlight {
+    @apply text-yellow-500 font-semibold;
+  }
   /* Contact Info */
   .contact {
-    @apply max-w-max rounded-md text-primary py-2 px-3 hover:bg-[#303030] hover:duration-500;
+    @apply max-w-max rounded-md text-teal-400 py-2 px-3 hover:bg-gray-100 dark:hover:bg-gray-800 hover:duration-500;
   }
   .contact > a {
     @apply flex items-center gap-2;
@@ -34,7 +35,7 @@
     @apply mt-4;
   }
   .post h1 {
-    @apply text-2xl underline underline-offset-[6px] decoration-4 decoration-[#303030] my-4;
+    @apply text-2xl underline underline-offset-[6px] decoration-4 decoration-gray-700 my-4;
   }
   .post p {
     @apply indent-4;
@@ -46,9 +47,9 @@
     @apply rounded-md border-white border-2;
   }
   .post a {
-    @apply text-primary font-bold;
+    @apply text-teal-400 font-bold;
   }
   .post strong {
-    @apply text-secondary;
+    @apply text-yellow-500;
   }
 }
