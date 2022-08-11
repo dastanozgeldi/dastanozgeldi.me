@@ -22,13 +22,12 @@ export const getSortedPostsData = () => {
     };
   });
 
-  // @ts-ignore: next-line
-  return allPostsData.sort(({ date: a }, { date: b }) => {
-    if (a < b) {
-      return 1;
-    } else if (a > b) {
-      return -1;
-    } else return 0;
+  return allPostsData.sort(({ data: a }, { data: b }) => {
+    let d1 = a.date;
+    let d2 = b.date;
+    d1 = d1.split("-").reverse().join("");
+    d2 = d2.split("-").reverse().join("");
+    return d1 > d2 ? -1 : d1 < d2 ? 1 : 0;
   });
 };
 

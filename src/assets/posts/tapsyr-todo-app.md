@@ -1,5 +1,5 @@
 ---
-title: "Tapsyr - the only to do app you'll ever need."
+title: "Tapsyr - Your daily dose of Tasks."
 date: "11-08-2022"
 ---
 
