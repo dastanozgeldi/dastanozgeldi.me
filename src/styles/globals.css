@@ -35,16 +35,16 @@
     @apply mt-4;
   }
   .post h1 {
-    @apply text-2xl underline underline-offset-[6px] decoration-4 decoration-gray-700 my-4;
+    @apply text-2xl font-bold underline underline-offset-[6px] decoration-4 decoration-gray-700 my-4;
   }
   .post p {
-    @apply indent-4;
+    @apply my-2;
   }
   .post hr {
     @apply my-4;
   }
   .post img {
-    @apply rounded-md border-white border-2;
+    @apply rounded-md;
   }
   .post a {
     @apply text-teal-400 font-bold;

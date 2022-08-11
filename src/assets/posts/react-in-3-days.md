@@ -1,7 +1,6 @@
 ---
 title: "How did I learn React in 3 days?"
 date: "26-06-2022"
-preview: "https://reactjs.org/logo-og.png"
 ---
 
 ![React Logo](https://reactjs.org/logo-og.png)

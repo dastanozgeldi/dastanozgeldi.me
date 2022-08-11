@@ -1,7 +1,6 @@
 ---
 title: "Next.js is Tough"
 date: "27-06-2022"
-preview: "https://miro.medium.com/max/1000/1*KDMx1YspSrBcFJG-NDZgDg.png"
 ---
 
 # What is Next.js?

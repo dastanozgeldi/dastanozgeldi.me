@@ -11,24 +11,14 @@ export default function Posts({ posts }: { posts: Post[] }) {
       </Notification>
       {posts &&
         posts.map(({ id, data }: Post) => (
-          <div
-            className="border-gray-900 dark:border-white my-8 border-2 rounded-2xl"
-            key={id}
-          >
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              className="rounded-t-xl border-b-2"
-              src={data.preview}
-              alt="Post Preview"
-            />
-            <div className="text-center p-4">
-              <Link href={`/posts/${id}`}>
-                <a>
-                  <span className="highlight">{data.date}</span> - {data.title}
-                </a>
-              </Link>
-            </div>
-          </div>
+          <Link key={id} href={`/posts/${id}`}>
+            <a>
+              <div className="my-8">
+                <h1 className="text-4xl font-extrabold">{data.title}</h1>
+                <span className="highlight">{data.date}</span>
+              </div>
+            </a>
+          </Link>
         ))}
     </Page>
   );

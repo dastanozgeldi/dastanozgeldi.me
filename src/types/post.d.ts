@@ -3,6 +3,5 @@ interface Post {
   data: {
     title: string;
     date: string;
-    preview: string;
   };
 }
