@@ -3,19 +3,19 @@ import Page from "../../components/Layout/Page";
 import Notification from "../../components/Notification";
 import { getSortedPostsData } from "../../lib/posts";
 
-export default function Posts({ posts }: { posts: Post[] }) {
+export default function Blog({ posts }: { posts: Post[] }) {
   return (
-    <Page title="Posts">
+    <Page title="Blog">
       <Notification>
         I enjoy writing about my progress throughout some period of time.
       </Notification>
       {posts &&
         posts.map(({ id, data }: Post) => (
-          <Link key={id} href={`/posts/${id}`}>
+          <Link key={id} href={`/blog/${id}`}>
             <a>
               <div className="my-8">
-                <h1 className="text-4xl font-extrabold">{data.title}</h1>
-                <span className="highlight">{data.date}</span>
+                <h1 className="text-2xl font-bold">{data.title}</h1>
+                <span className="text-gray-500">{data.date}</span>
               </div>
             </a>
           </Link>

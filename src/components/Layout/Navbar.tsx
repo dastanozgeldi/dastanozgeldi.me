@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="flex gap-2">
           <MobileMenu />
           <NavItem href="/" text="Home" />
-          <NavItem href="/posts" text="Posts" />
+          <NavItem href="/blog" text="Blog" />
         </div>
         <button
           aria-label="Toggle Dark Mode"

@@ -12,7 +12,7 @@ export default function Post({
         <h1 className="text-center font-extrabold text-2xl sm:text-4xl">
           {postData.data.title}
         </h1>
-        <p className="text-center">{postData.data.date}</p>
+        <p className="text-center text-gray-500">{postData.data.date}</p>
         <div
           className="post"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}

@@ -30,12 +30,15 @@
   .contact > a {
     @apply flex items-center gap-2;
   }
-  /* Posts */
+  /* Blog */
   .post {
     @apply mt-4;
   }
   .post h1 {
     @apply text-2xl font-bold underline underline-offset-[6px] decoration-4 decoration-gray-700 my-4;
+  }
+  .post h2 {
+    @apply text-xl font-semibold;
   }
   .post p {
     @apply my-2;
@@ -44,7 +47,7 @@
     @apply my-4;
   }
   .post img {
-    @apply rounded-md;
+    @apply rounded-md my-6;
   }
   .post a {
     @apply text-teal-400 font-bold;
