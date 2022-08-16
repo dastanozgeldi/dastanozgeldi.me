@@ -1,4 +1,5 @@
 import { IoLogoTwitter, IoLogoLinkedin, IoMail } from "react-icons/io5";
+import ExternalLink from "../ExternalLink";
 import Section from "../Section";
 
 export default function Contacts() {
@@ -6,27 +7,19 @@ export default function Contacts() {
     <Section title="Contacts">
       <div className="flex flex-col">
         <button className="contact">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/dastanozgeldi"
-          >
+          <ExternalLink href="https://twitter.com/dastanozgeldi">
             <IoLogoTwitter /> @dastanozgeldi
-          </a>
+          </ExternalLink>
         </button>
         <button className="contact">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://linkedin.com/in/dosek"
-          >
-            <IoLogoLinkedin /> @dosek
-          </a>
+          <ExternalLink href="https://linkedin.com/in/dastanozgeldi">
+            <IoLogoLinkedin /> @dastanozgeldi
+          </ExternalLink>
         </button>
         <button className="contact">
-          <a target="_blank" rel="noreferrer" href="mailto:ozgdastan@gmail.com">
+          <ExternalLink href="mailto:ozgdastan@gmail.com">
             <IoMail /> ozgdastan@gmail.com
-          </a>
+          </ExternalLink>
         </button>
       </div>
     </Section>

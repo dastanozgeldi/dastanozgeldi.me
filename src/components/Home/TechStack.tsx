@@ -1,3 +1,4 @@
+import ExternalLink from "../ExternalLink";
 import Section from "../Section";
 
 export default function TechStack() {
@@ -9,15 +10,8 @@ export default function TechStack() {
       </p>
       <p>
         My recent project is called{" "}
-        <a
-          className="font-bold text-teal-400"
-          href="https://tapsyr.dosek.xyz"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tapsyr
-        </a>{" "}
-        - the only to do app you&apos;ll ever need.
+        <ExternalLink href="https://tapsyr.dosek.xyz/">Tapsyr</ExternalLink> -
+        the only to do app you&apos;ll ever need.
       </p>
     </Section>
   );
