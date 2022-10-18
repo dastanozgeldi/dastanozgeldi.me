@@ -10,10 +10,10 @@ export default function Blog({ posts }: { posts: Post[] }) {
         I enjoy writing about my progress throughout some period of time.
       </Notification>
       {posts &&
-        posts.map(({ id, data }: Post) => (
+        posts.map(({ id, data }) => (
           <Link key={id} href={`/blog/${id}`}>
             <a>
-              <div className="my-8">
+              <div className="my-2 p-4 duration-500 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md">
                 <h1 className="text-2xl font-bold">{data.title}</h1>
                 <span className="text-gray-500">{data.date}</span>
               </div>

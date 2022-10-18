@@ -47,7 +47,7 @@
     @apply my-4;
   }
   .post img {
-    @apply rounded-md my-6;
+    @apply rounded-md my-6 mx-auto;
   }
   .post a {
     @apply text-teal-400 font-bold;
