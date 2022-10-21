@@ -32,7 +32,7 @@ export default function Navbar() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <nav className="px-8 pt-8">
+    <nav className="mx-2 mt-8">
       <div className="flex justify-between">
         <div className="flex gap-2">
           <MobileMenu />

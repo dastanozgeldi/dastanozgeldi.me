@@ -9,13 +9,6 @@
   min-height: 100vh;
 }
 
-@layer base {
-  html,
-  body {
-    @apply max-w-[76ch] mx-auto;
-  }
-}
-
 @layer components {
   .highlight {
     @apply text-yellow-500 font-semibold;

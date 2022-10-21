@@ -16,8 +16,10 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <title>Dastan Ozgeldi - Homepage</title>
       </Head>
-      <Navbar />
-      <main>{children}</main>
+      <div className="max-w-[76ch] mx-auto">
+        <Navbar />
+        {children}
+      </div>
     </>
   );
 }
