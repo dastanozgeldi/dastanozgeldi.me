@@ -7,23 +7,18 @@ export default function About() {
     <Section title="About">
       <p className="indent-4">
         I&apos;m a high-school sophomore with a passion for building different
-        kinds of software. I&apos;m also the co-founder of software development
-        teams like{" "}
+        kinds of software. I&apos;m also the co-founder of the{" "}
         <ExternalLink href="https://github.com/jolshylar/">
           Jolshylar
         </ExternalLink>{" "}
-        and <ExternalLink href="https://github.com/dbdteam/">DBD</ExternalLink>.
+        software development team.
       </p>
-      <div className="text-center mt-4">
-        <button className="rounded-md bg-teal-400 hover:bg-teal-500 hover:duration-500">
-          <a
-            className="flex gap-2 items-center py-2 px-8"
-            href="https://github.com/Dositan"
-          >
-            GitHub <BiLinkExternal width={20} height={20} />
-          </a>
-        </button>
-      </div>
+      <a
+        className="flex gap-2 py-2 px-8 my-4 items-center w-max mx-auto rounded-md text-gray-100 bg-teal-500 hover:bg-teal-600 hover:duration-500"
+        href="https://github.com/Dositan"
+      >
+        GitHub <BiLinkExternal className="w-4 h-4" />
+      </a>
     </Section>
   );
 }

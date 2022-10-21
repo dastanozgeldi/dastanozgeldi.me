@@ -3,7 +3,7 @@ import Section from "../Section";
 
 export default function TechStack() {
   return (
-    <Section title="My current tech-stack">
+    <Section title="Tech Stack">
       <p>
         I&apos;m currently focused on full-stack. I use t3 tech: Next.js,
         Next-Auth, Prisma, TailwindCSS, tRPC and Planetscale.

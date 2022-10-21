@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <main>
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Dastan's Homepage" />
@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <title>Dastan Ozgeldi - Homepage</title>
       </Head>
       <Navbar />
-      {children}
-    </main>
+      <main>{children}</main>
+    </>
   );
 }

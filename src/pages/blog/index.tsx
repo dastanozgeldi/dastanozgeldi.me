@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Page from "../../components/Layout/Page";
-import Notification from "../../components/Notification";
 import { getSortedPostsData } from "../../lib/posts";
 
 export default function Blog({ posts }: { posts: Post[] }) {
   return (
     <Page title="Blog">
-      <Notification>
+      <p className="bg-gray-200 dark:bg-gray-700 mt-4 mb-8 rounded-xl px-8 py-4">
         I enjoy writing about my progress throughout some period of time.
-      </Notification>
+      </p>
       {posts &&
         posts.map(({ id, data }) => (
           <Link key={id} href={`/blog/${id}`}>
