@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profilePicture from "../../assets/profile.jpg";
 
-export default function Profile() {
+export const Profile = () => {
   return (
     <div className="sm:flex sm:items-center sm:gap-10 my-4">
       <div>
@@ -19,4 +19,4 @@ export default function Profile() {
       </div>
     </div>
   );
-}
+};

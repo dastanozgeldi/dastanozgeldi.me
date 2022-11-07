@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { ReactNode } from "react";
-import Navbar from "./Navbar";
+import { Navbar } from "./Navbar";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Head>
@@ -16,10 +15,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <title>Dastan Ozgeldi - Homepage</title>
       </Head>
-      <div className="max-w-[76ch] mx-auto">
-        <Navbar />
-        {children}
-      </div>
+      <Navbar />
+      <div className="max-w-[60ch] mx-auto p-4">{children}</div>
     </>
   );
-}
+};

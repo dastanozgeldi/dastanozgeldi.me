@@ -1,16 +1,18 @@
-import Section from "../Section";
+import { Section } from "../Section";
 import { BiLinkExternal } from "react-icons/bi";
-import ExternalLink from "../ExternalLink";
 
-export default function About() {
+export const About = () => {
   return (
     <Section title="About">
       <p className="indent-4">
         I&apos;m a high-school sophomore with a passion for building different
         kinds of software. I&apos;m also the co-founder of the{" "}
-        <ExternalLink href="https://github.com/jolshylar/">
+        <a
+          className="text-teal-400 font-semibold"
+          href="https://github.com/jolshylar/"
+        >
           Jolshylar
-        </ExternalLink>{" "}
+        </a>{" "}
         software development team.
       </p>
       <a
@@ -21,4 +23,4 @@ export default function About() {
       </a>
     </Section>
   );
-}
+};

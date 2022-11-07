@@ -3,24 +3,10 @@
 @tailwind utilities;
 
 #__next {
-  @apply bg-gray-50 dark:bg-gray-900;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  @apply flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900;
 }
 
 @layer components {
-  .highlight {
-    @apply text-yellow-500 font-semibold;
-  }
-  /* Contact Info */
-  .contact {
-    @apply max-w-max rounded-md text-teal-400 py-2 px-3 hover:bg-gray-100 dark:hover:bg-gray-800 hover:duration-500;
-  }
-  .contact > a {
-    @apply flex items-center gap-2;
-  }
-  /* Blog */
   .post {
     @apply mt-4;
   }

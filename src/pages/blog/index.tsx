@@ -1,6 +1,14 @@
 import Link from "next/link";
-import Page from "../../components/Layout/Page";
+import { Page } from "../../components/Layout/Page";
 import { getSortedPostsData } from "../../lib/posts";
+
+type Post = {
+  id: string;
+  data: {
+    title: string;
+    date: string;
+  };
+};
 
 export default function Blog({ posts }: { posts: Post[] }) {
   return (
@@ -23,8 +31,8 @@ export default function Blog({ posts }: { posts: Post[] }) {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps = () => {
   return {
     props: { posts: getSortedPostsData() },
   };
-}
+};

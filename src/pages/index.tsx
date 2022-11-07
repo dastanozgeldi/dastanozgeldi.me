@@ -1,11 +1,11 @@
-import Page from "../components/Layout/Page";
-import Profile from "../components/Home/Profile";
-import About from "../components/Home/About";
-import Bio from "../components/Home/Bio";
-import TechStack from "../components/Home/TechStack";
-import Contacts from "../components/Home/Contacts";
+import { Page } from "../components/Layout/Page";
+import { Profile } from "../components/Home/Profile";
+import { About } from "../components/Home/About";
+import { Bio } from "../components/Home/Bio";
+import { TechStack } from "../components/Home/TechStack";
+import { Contacts } from "../components/Home/Contacts";
 
-export default function Home() {
+const Home = () => {
   return (
     <Page title="Home">
       <p className="bg-gray-200 dark:bg-gray-700 mt-4 mb-8 rounded-xl px-8 py-4">
@@ -18,4 +18,6 @@ export default function Home() {
       <Contacts />
     </Page>
   );
-}
+};
+
+export default Home;

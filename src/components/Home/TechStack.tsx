@@ -1,7 +1,7 @@
-import ExternalLink from "../ExternalLink";
-import Section from "../Section";
+import { ExternalLink } from "../ExternalLink";
+import { Section } from "../Section";
 
-export default function TechStack() {
+export const TechStack = () => {
   return (
     <Section title="Tech Stack">
       <p>
@@ -15,4 +15,4 @@ export default function TechStack() {
       </p>
     </Section>
   );
-}
+};

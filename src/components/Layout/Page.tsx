@@ -1,16 +1,14 @@
 import Head from "next/head";
 
-export default function Page({
-  children,
-  title,
-}: {
+type PageProps = {
   children: React.ReactNode;
   title: string;
-}) {
-  const t = `${title} | Dastan Ozgeldi`;
+};
 
+export const Page = ({ children, title }: PageProps) => {
+  const t = `${title} | Dastan Ozgeldi`;
   return (
-    <article className="p-4 max-w-[60ch] mx-auto">
+    <>
       {title && (
         <Head>
           <title>{t}</title>
@@ -18,6 +16,6 @@ export default function Page({
         </Head>
       )}
       {children}
-    </article>
+    </>
   );
-}
+};
