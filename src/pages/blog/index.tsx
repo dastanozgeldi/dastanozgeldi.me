@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Page } from "../../components/Layout/Page";
+import { Page } from "../../components/Page";
 import { getSortedPostsData } from "../../lib/posts";
 
 type Post = {

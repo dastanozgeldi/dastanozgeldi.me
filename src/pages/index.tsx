@@ -1,4 +1,4 @@
-import { Page } from "../components/Layout/Page";
+import { Page } from "../components/Page";
 import { Profile } from "../components/Home/Profile";
 import { About } from "../components/Home/About";
 import { Bio } from "../components/Home/Bio";

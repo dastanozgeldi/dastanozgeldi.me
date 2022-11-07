@@ -1,4 +1,4 @@
-import { Page } from "../../components/Layout/Page";
+import { Page } from "../../components/Page";
 import { getAllPostsIds, getPostData } from "../../lib/posts";
 
 type PostProps = {

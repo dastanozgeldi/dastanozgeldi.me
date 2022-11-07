@@ -12,7 +12,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta property="og:site_name" content="Dastan Ozgeldi" />
         <meta name="og:title" content="Dastan Ozgeldi" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
+        <meta property="og:image" content="https://www.dosek.xyz/card.png" />
         <title>Dastan Ozgeldi - Homepage</title>
       </Head>
       <Navbar />

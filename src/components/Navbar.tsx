@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import cn from "classnames";
-import { MobileMenu } from "../MobileMenu";
+import { MobileMenu } from "./MobileMenu";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 type NavItemProps = {
@@ -38,7 +38,7 @@ export const Navbar = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <nav className="mx-2 mt-8">
+    <nav className="px-2 mt-8 w-full max-w-[60ch] mx-auto">
       <div className="flex justify-between">
         <div className="flex gap-2">
           <MobileMenu />
@@ -47,7 +47,6 @@ export const Navbar = () => {
         </div>
         <button
           aria-label="Toggle Dark Mode"
-          type="button"
           className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
