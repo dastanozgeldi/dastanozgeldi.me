@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "./Footer";
 import { Navbar } from "./Navbar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -17,6 +18,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </Head>
       <Navbar />
       <div className="max-w-[60ch] mx-auto p-4">{children}</div>
+      <Footer />
     </>
   );
 };

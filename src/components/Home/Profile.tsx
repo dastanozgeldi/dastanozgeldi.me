@@ -5,7 +5,7 @@ export const Profile = () => {
   return (
     <div className="sm:flex sm:items-center sm:gap-10 my-4">
       <div>
-        <h1 className="font-extrabold text-4xl">Dastan Ozgeldi</h1>
+        <h1 className="font-extrabold text-4xl font-serif">Dastan Ozgeldi</h1>
         <p>Digital Nomad ( Sophomore / Developer / Procrastinator )</p>
       </div>
       <div className="flex flex-col items-center justify-center mt-5 sm:m-0">
