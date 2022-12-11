@@ -17,7 +17,7 @@ export const About = () => {
       </p>
       <a
         className="flex gap-2 py-2 px-8 my-4 items-center w-max mx-auto rounded-md text-gray-100 bg-teal-500 hover:bg-teal-600 hover:duration-500"
-        href="https://github.com/Dositan"
+        href="https://github.com/dastanozgeldi"
       >
         GitHub <BiLinkExternal className="w-4 h-4" />
       </a>
