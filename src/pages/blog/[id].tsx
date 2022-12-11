@@ -8,7 +8,7 @@ type PostProps = {
   };
 };
 
-export default function Post({ postData }: PostProps) {
+const Post = ({ postData }: PostProps) => {
   return (
     <Page title={postData.data.title}>
       <h1 className="text-center font-extrabold text-2xl sm:text-4xl">
@@ -21,7 +21,9 @@ export default function Post({ postData }: PostProps) {
       />
     </Page>
   );
-}
+};
+
+export default Post;
 
 export const getStaticPaths = async () => {
   const paths = getAllPostsIds();
