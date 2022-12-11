@@ -18,7 +18,7 @@ export const Footer = () => {
         </a>
         <a
           className="duration-300 rounded-full p-3 hover:bg-gray-200 hover:dark:bg-gray-700"
-          href="https://www.youtube.com/channel/UCAJoAtr-e7KpN6HaEddvqPg"
+          href="https://youtube.com/@dastanozgeldi"
         >
           <IoLogoYoutube className="w-5 h-5" />
         </a>
