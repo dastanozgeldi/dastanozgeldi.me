@@ -1,4 +1,3 @@
-import { ExternalLink } from "../ExternalLink";
 import { Section } from "../Section";
 
 export const TechStack = () => {
@@ -10,8 +9,13 @@ export const TechStack = () => {
       </p>
       <p>
         My recent project is called{" "}
-        <ExternalLink href="https://tapsyr.dosek.xyz/">Tapsyr</ExternalLink> -
-        the only to do app you&apos;ll ever need.
+        <a
+          className="font-medium text-teal-400"
+          href="https://tapsyr.dosek.xyz/"
+        >
+          Tapsyr
+        </a>{" "}
+        - the only to do app you&apos;ll ever need.
       </p>
     </Section>
   );
