@@ -4,7 +4,6 @@ import { About } from "../components/Home/About";
 import { Bio } from "../components/Home/Bio";
 import { TechStack } from "../components/Home/TechStack";
 import { Contacts } from "../components/Home/Contacts";
-import { LastNews } from "../components/Home/LastNews";
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <Bio />
       <TechStack />
       <Contacts />
-      <LastNews />
     </Page>
   );
 };
