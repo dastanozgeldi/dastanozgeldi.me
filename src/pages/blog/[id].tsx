@@ -1,5 +1,6 @@
 import { Page } from "../../components/Page";
 import { getAllPostsIds, getPostData } from "../../lib/posts";
+import styles from "../../styles/Post.module.css";
 
 type PostProps = {
   postData: {
@@ -16,7 +17,7 @@ const Post = ({ postData }: PostProps) => {
       </h1>
       <p className="text-center text-gray-500">{postData.data.date}</p>
       <div
-        className="post"
+        className={styles.post}
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
     </Page>
