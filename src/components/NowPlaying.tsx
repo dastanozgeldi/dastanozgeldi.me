@@ -9,12 +9,12 @@ export const NowPlaying = () => {
     <span className="flex items-center justify-center space-x-2">
       {data?.isPlaying ? (
         <img
-          className="w-8 rounded-full"
+          className="w-6 h-6 rounded-full"
           src={data?.albumImageUrl}
           alt={data?.album}
         />
       ) : (
-        <FaSpotify size={32} color="#1ED760" />
+        <FaSpotify className="w-6 h-6 text-[#1ED760]" />
       )}
       <div>
         {data?.isPlaying ? (
