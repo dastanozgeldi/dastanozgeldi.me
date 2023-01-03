@@ -1,4 +1,4 @@
-import { Section } from "../Section";
+import { Section } from "components/Section";
 import { BiLinkExternal } from "react-icons/bi";
 
 export const About = () => {

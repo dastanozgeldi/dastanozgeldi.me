@@ -2,7 +2,7 @@ import cn from "classnames";
 import Link from "next/link";
 import useDelayedRender from "use-delayed-render";
 import { useState, useEffect } from "react";
-import styles from "../styles/mobile-menu.module.css";
+import styles from "styles/mobile-menu.module.css";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 export const MobileMenu = () => {
@@ -23,9 +23,10 @@ export const MobileMenu = () => {
   };
 
   useEffect(() => {
-    return function cleanup() {
+    const cleanup = () => {
       document.body.style.overflow = "";
     };
+    return cleanup;
   }, []);
 
   return (

@@ -1,9 +1,9 @@
-import { Page } from "../components/Page";
-import { Profile } from "../components/Home/Profile";
-import { About } from "../components/Home/About";
-import { Bio } from "../components/Home/Bio";
-import { TechStack } from "../components/Home/TechStack";
-import { Contacts } from "../components/Home/Contacts";
+import { Page } from "components/Page";
+import { Profile } from "components/Home/Profile";
+import { About } from "components/Home/About";
+import { Bio } from "components/Home/Bio";
+import { TechStack } from "components/Home/TechStack";
+import { Contacts } from "components/Home/Contacts";
 
 const Home = () => {
   return (

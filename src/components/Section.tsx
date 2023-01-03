@@ -1,5 +1,6 @@
-type SectionProps = {
-  children: React.ReactNode;
+import { PropsWithChildren } from "react";
+
+type SectionProps = PropsWithChildren & {
   title: string;
 };
 

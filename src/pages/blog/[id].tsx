@@ -1,6 +1,6 @@
-import { Page } from "../../components/Page";
-import { getAllPostsIds, getPostData } from "../../lib/posts";
-import styles from "../../styles/Post.module.css";
+import { Page } from "components/Page";
+import { getAllPostsIds, getPostData } from "lib/posts";
+import styles from "styles/Post.module.css";
 
 type PostProps = {
   postData: {

@@ -1,4 +1,4 @@
-import { Section } from "../Section";
+import { Section } from "components/Section";
 
 const H = ({ children }: { children: React.ReactNode }) => (
   <span className="text-yellow-500 font-semibold">{children}</span>

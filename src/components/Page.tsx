@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { PropsWithChildren } from "react";
 
-type PageProps = {
-  children: React.ReactNode;
+type PageProps = PropsWithChildren & {
   title: string;
+  className?: string;
 };
 
 export const Page = ({ children, title }: PageProps) => {

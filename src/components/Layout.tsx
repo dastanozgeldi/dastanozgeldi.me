@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { FC, PropsWithChildren } from "react";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
+export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Head>

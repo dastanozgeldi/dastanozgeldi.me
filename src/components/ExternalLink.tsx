@@ -1,9 +1,10 @@
-type ExternalLinkProps = {
+import { PropsWithChildren } from "react";
+
+type ExternalLinkProps = PropsWithChildren & {
   href: string;
-  children: React.ReactNode;
 };
 
-export const ExternalLink = ({ href, children }: ExternalLinkProps) => {
+export const ExternalLink = ({ children, href }: ExternalLinkProps) => {
   return (
     <a
       className="flex items-center gap-2 font-medium text-teal-400"

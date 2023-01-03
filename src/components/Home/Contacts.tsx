@@ -1,6 +1,6 @@
 import { IoLogoTwitter, IoLogoLinkedin, IoMail } from "react-icons/io5";
-import { ExternalLink } from "../ExternalLink";
-import { Section } from "../Section";
+import { ExternalLink } from "components/ExternalLink";
+import { Section } from "components/Section";
 
 const CONTACT_BUTTON =
   "max-w-max rounded-md text-teal-400 py-2 px-3 hover:bg-gray-100 dark:hover:bg-gray-800 hover:duration-500";
