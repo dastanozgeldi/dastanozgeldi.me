@@ -12,8 +12,8 @@ export const Profile = () => {
         <Image
           className="rounded-full"
           src={profilePicture}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           alt="Profile"
         />
       </div>

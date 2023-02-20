@@ -50,7 +50,7 @@ export const MobileMenu = () => {
         <ul
           className={cn(
             styles.menu,
-            "flex flex-col absolute bg-gray-50 dark:bg-gray-900",
+            "flex flex-col absolute bg-gray-50 dark:bg-[#181818]",
             isMenuRendered && styles.menuRendered
           )}
         >
@@ -59,7 +59,12 @@ export const MobileMenu = () => {
             style={{ transitionDelay: "150ms" }}
           >
             <Link href="/">
-              <a className="flex w-auto pb-4">Home</a>
+              <a
+                className="flex w-auto pb-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </a>
             </Link>
           </li>
           <li
@@ -67,7 +72,12 @@ export const MobileMenu = () => {
             style={{ transitionDelay: "250ms" }}
           >
             <Link href="/blog">
-              <a className="flex w-auto pb-4">Blog</a>
+              <a
+                className="flex w-auto pb-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </a>
             </Link>
           </li>
         </ul>

@@ -34,7 +34,7 @@ const Blog = ({ posts }: { posts: Post[] }) => {
     <Page title="Blog">
       {posts.length > 0 ? (
         <div>
-          <p className="bg-gray-200 dark:bg-gray-700 mt-4 mb-8 rounded-xl px-8 py-4">
+          <p className="bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
             I enjoy writing about my progress throughout some period of time.
           </p>
           {posts.map(({ id, data }) => (
@@ -42,7 +42,7 @@ const Blog = ({ posts }: { posts: Post[] }) => {
           ))}
         </div>
       ) : (
-        <p className="bg-gray-200 dark:bg-gray-700 mt-4 mb-8 rounded-xl px-8 py-4">
+        <p className="bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
           Posts haven&apos;t been published yet.
         </p>
       )}
