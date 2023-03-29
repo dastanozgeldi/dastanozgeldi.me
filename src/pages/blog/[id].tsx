@@ -2,14 +2,17 @@ import { Page } from "components/Page";
 import { getAllPostsIds, getPostData } from "lib/posts";
 import styles from "styles/Post.module.css";
 
-type PostProps = {
+type Props = {
   postData: {
-    data: { title: string; date: string };
+    data: {
+      title: string;
+      date: string;
+    };
     contentHtml: string;
   };
 };
 
-const Post = ({ postData }: PostProps) => {
+const Post = ({ postData }: Props) => {
   return (
     <Page title={postData.data.title}>
       <h1 className="text-center font-extrabold text-2xl sm:text-4xl">
@@ -34,7 +37,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({
   params,
 }: {
-  params: { id: string };
+  params: {
+    id: string;
+  };
 }) => {
   const postData = await getPostData(params.id);
   return {

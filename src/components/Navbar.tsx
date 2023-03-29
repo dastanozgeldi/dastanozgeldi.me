@@ -6,12 +6,12 @@ import cn from "classnames";
 import { MobileMenu } from "./MobileMenu";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
-type NavItemProps = {
+type Props = {
   href: string;
   text: string;
 };
 
-const NavItem = ({ href, text }: NavItemProps) => {
+const NavItem = ({ href, text }: Props) => {
   const { asPath } = useRouter();
   const isActive = asPath === href;
 

@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 
-type PageProps = PropsWithChildren & {
+type Props = PropsWithChildren & {
   title: string;
   className?: string;
 };
 
-export const Page = ({ children, title }: PageProps) => {
+export const Page = ({ children, title }: Props) => {
   const t = `${title} | Dastan Ozgeldi`;
   return (
     <>

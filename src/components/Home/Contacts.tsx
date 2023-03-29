@@ -1,25 +1,23 @@
 import { IoLogoTwitter, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import { ExternalLink } from "components/ExternalLink";
 import { Section } from "components/Section";
-
-const CONTACT_BUTTON =
-  "max-w-max rounded-md text-teal-400 py-2 px-3 hover:bg-gray-100 dark:hover:bg-gray-800 hover:duration-500";
+import { styles } from "styles";
 
 export const Contacts = () => {
   return (
     <Section title="Contacts">
       <div className="flex flex-col">
-        <button className={CONTACT_BUTTON}>
+        <button className={styles.buttonContact}>
           <ExternalLink href="https://twitter.com/dastanozgeldi">
             <IoLogoTwitter /> @dastanozgeldi
           </ExternalLink>
         </button>
-        <button className={CONTACT_BUTTON}>
+        <button className={styles.buttonContact}>
           <ExternalLink href="https://linkedin.com/in/dastanozgeldi">
             <IoLogoLinkedin /> @dastanozgeldi
           </ExternalLink>
         </button>
-        <button className={CONTACT_BUTTON}>
+        <button className={styles.buttonContact}>
           <ExternalLink href="mailto:ozgdastan@gmail.com">
             <IoMail /> ozgdastan@gmail.com
           </ExternalLink>
