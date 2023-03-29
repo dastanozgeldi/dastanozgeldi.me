@@ -1,8 +1,5 @@
-import { Page } from "components/Page";
-import { Profile } from "components/Home/Profile";
-import { About } from "components/Home/About";
-import { Bio } from "components/Home/Bio";
-import { Contacts } from "components/Home/Contacts";
+import { Page } from "layout/Page";
+import { About, Bio, LastEvent, Profile } from "components/home";
 
 const Home = () => {
   return (
@@ -13,7 +10,7 @@ const Home = () => {
       <Profile />
       <About />
       <Bio />
-      <Contacts />
+      <LastEvent />
     </Page>
   );
 };

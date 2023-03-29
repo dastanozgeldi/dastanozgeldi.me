@@ -1,4 +1,4 @@
-import { Page } from "components/Page";
+import { Page } from "layout/Page";
 import { getAllPostsIds, getPostData } from "lib/posts";
 import styles from "styles/Post.module.css";
 

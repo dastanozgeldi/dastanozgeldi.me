@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Page } from "components/Page";
+import { Page } from "layout/Page";
 import { getSortedPostsData } from "lib/posts";
 
 export const getStaticProps = () => {

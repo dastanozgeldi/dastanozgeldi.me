@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import cn from "classnames";
-import { MobileMenu } from "./MobileMenu";
+import { MobileMenu } from "../components/MobileMenu";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 type Props = {
