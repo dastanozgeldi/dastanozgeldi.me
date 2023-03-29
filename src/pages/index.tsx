@@ -1,5 +1,5 @@
-import { Page } from "layout/Page";
-import { About, Bio, LastEvent, Profile } from "components/home";
+import { Page } from "layouts";
+import { About, Bio, LastEvent, Profile } from "@/components/home";
 
 const Home = () => {
   return (
