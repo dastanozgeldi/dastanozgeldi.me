@@ -7,7 +7,7 @@ export const LastEvent = () => {
       <div className="aspect-w-16 aspect-h-9 my-4">
         <iframe
           className="rounded-lg"
-          src="https://www.youtube.com/embed/ES7R_t6z7S8"
+          src="https://www.youtube.com/embed/n4nlS30nWWA"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
