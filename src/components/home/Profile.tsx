@@ -10,7 +10,7 @@ export const Profile = () => {
       </div>
       <div className="flex flex-col items-center justify-center mt-5 sm:m-0">
         <Image
-          className="rounded-full"
+          className="rounded-full object-cover"
           src={profilePicture}
           width={150}
           height={150}
