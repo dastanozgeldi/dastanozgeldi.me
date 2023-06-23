@@ -10,7 +10,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Dastan's Homepage" />
         <meta name="author" content="Dastan Ozgeldi" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         <meta property="og:site_name" content="Dastan Ozgeldi" />
         <meta name="og:title" content="Dastan Ozgeldi" />
         <meta property="og:type" content="website" />
