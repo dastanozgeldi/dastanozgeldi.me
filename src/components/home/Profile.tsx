@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePicture from "assets/profile.jpg";
+import logo from "assets/logo.svg";
 
 export const Profile = () => {
   return (
@@ -9,13 +9,7 @@ export const Profile = () => {
         <p>Digital Nomad ( Sophomore / Developer / Procrastinator )</p>
       </div>
       <div className="flex flex-col items-center justify-center mt-5 sm:m-0">
-        <Image
-          className="rounded-full object-cover"
-          src={profilePicture}
-          width={150}
-          height={150}
-          alt="Profile"
-        />
+        <Image src={logo} width={100} height={100} alt="Personal Logo" />
       </div>
     </div>
   );
