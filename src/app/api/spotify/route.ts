@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 import querystring from "querystring";
 
 const {
@@ -37,11 +37,11 @@ export const getNowPlaying = async () => {
   });
 };
 
-const handler = async (_: NextApiRequest, res: NextApiResponse) => {
+export async function GET() {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
-    return res.status(200).json({ isPlaying: false });
+    return NextResponse.json({ isPlaying: false });
   }
 
   const song = await response.json();
@@ -54,7 +54,7 @@ const handler = async (_: NextApiRequest, res: NextApiResponse) => {
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
 
-  return res.status(200).json({
+  return NextResponse.json({
     album,
     albumImageUrl,
     artist,
@@ -62,6 +62,4 @@ const handler = async (_: NextApiRequest, res: NextApiResponse) => {
     songUrl,
     title,
   });
-};
-
-export default handler;
+}

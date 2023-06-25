@@ -1,14 +1,5 @@
 import Link from "next/link";
-import { Page } from "layouts";
-import { getSortedPostsData } from "lib/posts";
-
-export const getStaticProps = () => {
-  return {
-    props: {
-      posts: getSortedPostsData(),
-    },
-  };
-};
+import { getSortedPostsData } from "@/lib/posts";
 
 type Post = {
   id: string;
@@ -27,16 +18,18 @@ const PostItem = ({ id, data }: Post) => (
   </Link>
 );
 
-const Blog = ({ posts }: { posts: Post[] }) => {
+const Blog = () => {
+  const posts = getSortedPostsData();
+
   return (
-    <Page title="Blog">
+    <div className="pb-24">
       {posts.length > 0 ? (
         <div>
           <p className="bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
             I enjoy writing about my progress throughout some period of time.
           </p>
           {posts.map(({ id, data }) => (
-            <PostItem key={id} id={id} data={data} />
+            <PostItem key={id} id={id} data={data as any} />
           ))}
         </div>
       ) : (
@@ -44,7 +37,7 @@ const Blog = ({ posts }: { posts: Post[] }) => {
           Posts haven&apos;t been published yet.
         </p>
       )}
-    </Page>
+    </div>
   );
 };
 
