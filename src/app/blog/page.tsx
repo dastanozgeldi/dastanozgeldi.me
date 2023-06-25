@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Read about my thoughts on full-stack development, AI and my general progress.",
+};
 
 type Post = {
   id: string;
