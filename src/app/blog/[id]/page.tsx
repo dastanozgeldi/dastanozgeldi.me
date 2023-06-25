@@ -1,6 +1,33 @@
 import { getAllPostsIds, getPostData } from "@/lib/posts";
 import styles from "@/styles/Post.module.css";
 
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Props["params"];
+}) {
+  const post = await getPostData(params.id);
+
+  return {
+    title: post.data.title,
+    description: post.data.description,
+  };
+}
+
+export async function generateStaticParams(): Promise<Props["params"][]> {
+  const paths = getAllPostsIds();
+
+  return paths.map((path) => ({
+    id: path.params.id,
+  }));
+}
+
 const Post = async ({ params }: any) => {
   const postData = await getPostData(params.id);
 
@@ -19,8 +46,3 @@ const Post = async ({ params }: any) => {
 };
 
 export default Post;
-
-export const getStaticPaths = async () => {
-  const paths = getAllPostsIds();
-  return { paths, fallback: false };
-};
