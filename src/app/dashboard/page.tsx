@@ -1,6 +1,7 @@
 "use client";
+import { Skeleton } from "@/components/ui/skeleton";
 import fetcher from "@/lib/fetcher";
-import React from "react";
+import { useEffect, useState } from "react";
 import { IoLogoYoutube } from "react-icons/io5";
 import useSWR from "swr";
 
@@ -19,9 +20,9 @@ type YouTubeData = {
 const Dashboard = () => {
   const { data: youtubeData } = useSWR<YouTubeData>("/api/youtube", fetcher);
 
-  const [mounted, setMounted] = React.useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setMounted(true);
   }, []);
 
@@ -63,7 +64,7 @@ const Dashboard = () => {
                   <div className="text-sm font-bold">{title}</div>
                 </div>
                 <div className="text-4xl font-black text-accent-fg">
-                  {value ? value : "..."}
+                  {value ? value : <Skeleton className="h-10 w-full" />}
                 </div>
               </a>
             );
