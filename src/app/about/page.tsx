@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <section className="pb-24">
-      <h1 className="text-2xl font-serif">About me</h1>
+      <h1 className="text-2xl">About me</h1>
 
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
         Hey, I&apos;m Dastan.
@@ -22,31 +22,21 @@ const About = () => {
         </p>
         <hr />
         <p>
-          I&apos;m passionate about many creative pursuits, including design and
-          of course coding. This combination of interests eventually led me to
-          my current role, frontend development.
+          I&apos;m passionate about many fields of programming, including web
+          and mobile development. This set of skills eventually led me to my
+          current state, full-stack development.
         </p>
         <p>
-          I love software development, especially getting feedback from users
-          motivates me a lot. It&apos;s especially exciting to improve users
-          experience and let them focus solely on production. Just build.
+          I love building different types of applications, especially receiving
+          feedback from users hugely inspires me. It&apos;s especially amusing
+          to make users&apos; lives easier and let them focus on direct results.
         </p>
         <p className="mb-8">
-          Outside of these, I develop minimal digital products. I develop
-          packages that will both solve the problems I have on the web and
-          facilitate our development process.
+          Besides, I love developing chatbots. I work on bots for different
+          groups of users using the power of generative AI that serves with the
+          same purpose - automating a certain task.
         </p>
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://linkedin.com/in/dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-          >
-            <div className="flex items-center">
-              <div className="ml-3">LinkedIn</div>
-            </div>
-          </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -55,6 +45,16 @@ const About = () => {
           >
             <div className="flex items-center">
               <div className="ml-3">GitHub</div>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://linkedin.com/in/dastanozgeldi"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+          >
+            <div className="flex items-center">
+              <div className="ml-3">LinkedIn</div>
             </div>
           </a>
           <a
