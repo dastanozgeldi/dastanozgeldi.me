@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Dastan | Full-stack Developer",
   description: "Building digital products, brands, and experience.",
-  url: "https://dosek.xyz",
+  url: "https://dastanozgeldi.me",
   email: "dastanozgeldi@gmail.com",
   image: "/avatar.png",
   social: {
