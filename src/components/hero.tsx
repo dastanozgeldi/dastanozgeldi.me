@@ -18,10 +18,10 @@ const Hero = () => {
       />
       <div className="text-center py-12">
         <p className="text-2xl ">
-          <Balancer>Building an iOS app</Balancer>
+          <Balancer>Building web apps</Balancer>
         </p>
         <p className="text-2xl">
-          <Balancer> using generative AI</Balancer>
+          <Balancer>that improve lives</Balancer>
         </p>
       </div>
       <div>
