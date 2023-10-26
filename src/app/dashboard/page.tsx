@@ -1,9 +1,9 @@
 "use client";
+import { useEffect, useState } from "react";
+import useSWR from "swr";
 import { Skeleton } from "@/components/ui/skeleton";
 import fetcher from "@/lib/fetcher";
-import { useEffect, useState } from "react";
-import { IoLogoYoutube } from "react-icons/io5";
-import useSWR from "swr";
+import { Icons } from "@/components/icons";
 
 type Card = {
   icon: React.ReactNode;
@@ -31,13 +31,13 @@ const Dashboard = () => {
       title: "YouTube Views",
       link: "https://youtube.com/@dastanozgeldi",
       value: youtubeData?.views,
-      icon: <IoLogoYoutube />,
+      icon: <Icons.youtube />,
     },
     {
       title: "YouTube Subscribers",
       link: "https://youtube.com/@dastanozgeldi",
       value: youtubeData?.subscribers,
-      icon: <IoLogoYoutube />,
+      icon: <Icons.youtube />,
     },
   ];
 

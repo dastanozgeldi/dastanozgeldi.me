@@ -1,6 +1,6 @@
 "use client";
 import useSWR from "swr";
-import { FaSpotify } from "react-icons/fa";
+import { Icons } from "./icons";
 
 export const NowPlaying = () => {
   const fetcher = (url: string) => fetch(url).then((r) => r.json());
@@ -15,7 +15,7 @@ export const NowPlaying = () => {
           alt={data?.album}
         />
       ) : (
-        <FaSpotify className="w-6 h-6 text-[#1ED760]" />
+        <Icons.spotify className="w-6 h-6 text-[#1ED760]" />
       )}
       <div>
         {data?.isPlaying ? (
