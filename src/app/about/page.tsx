@@ -11,20 +11,12 @@ const About = () => {
       <h1 className="text-2xl">About me</h1>
 
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Hey, I&apos;m Dastan.
+        Hello, I&apos;m Dastan.
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
-          I&apos;m currently participating in{" "}
-          <b>nFactorial Incubator as an iOS Developer</b>, building app
-          utilizing the power of <b>generative AI</b>. I focus on crafting and
-          developing real-world applications that our society needs.
-        </p>
-        <hr />
-        <p>
-          I&apos;m passionate about many fields of programming, including web
-          and mobile development. This set of skills eventually led me to my
-          current state, full-stack development.
+          I&apos;m passionate about many fields of programming, including web,
+          mobile development and generative AI.
         </p>
         <p>
           I love building different types of applications, especially receiving
