@@ -3,7 +3,7 @@ export const metadata = {
   description: "Building digital products, brands, and experience.",
   url: "https://dastanozgeldi.me",
   email: "dastanozgeldi@gmail.com",
-  image: "/avatar.png",
+  image: "/brand.png",
   social: {
     linkedin: "https://twitter.com/in/dastanozgeldi",
     instagram: "https://www.instagram.com/dastanozgeldi",

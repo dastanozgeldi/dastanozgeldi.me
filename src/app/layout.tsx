@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const title = "Dastan Özgeldi";
 const description = "Building digital products, brands, and experience.";
-const image = "https://dastanozgeldi.me/avatar.png";
+const image = "https://dastanozgeldi.me/brand.png";
 const url = "https://dastanozgeldi.me/";
 const locale = "en-US";
 
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   themeColor: "#ffffff",
   icons: {
-    icon: "/avatar.png",
-    apple: "/avatar.png",
+    icon: "/brand.png",
+    apple: "/brand.png",
   },
 };
 
