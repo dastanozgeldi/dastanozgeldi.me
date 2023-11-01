@@ -14,6 +14,7 @@ import {
   ScanFace,
   Youtube,
   Mail,
+  Network,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -22,7 +23,7 @@ export const Icons = {
   home: Home,
   about: ScanFace,
   dashboard: AlignEndHorizontal,
-  blog: Book,
+  projects: Network,
   code: Code2,
   command: Command,
   mail: Mail,

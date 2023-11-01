@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -54,9 +53,9 @@ export const CommandMenu = () => {
           onSelect: () => runCommand(() => router.push("/")),
         },
         {
-          title: "About",
-          icon: <Icons.about size={16} className="mr-2" />,
-          onSelect: () => runCommand(() => router.push("/about")),
+          title: "Projects",
+          icon: <Icons.projects size={16} className="mr-2" />,
+          onSelect: () => runCommand(() => router.push("/projects")),
         },
         {
           title: "Dashboard",
@@ -64,9 +63,9 @@ export const CommandMenu = () => {
           onSelect: () => runCommand(() => router.push("/dashboard")),
         },
         {
-          title: "Blog",
-          icon: <Icons.blog size={16} className="mr-2" />,
-          onSelect: () => runCommand(() => router.push("/blog")),
+          title: "About",
+          icon: <Icons.about size={16} className="mr-2" />,
+          onSelect: () => runCommand(() => router.push("/about")),
         },
         {
           title: "Source Code",
