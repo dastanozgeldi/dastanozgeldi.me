@@ -26,7 +26,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-full border-t-[1px] border-t-gray-500 p-4 max-w-[60ch] mx-auto space-y-4">
+    <footer className="w-full border-t-[1px] border-t-gray-500 p-4 space-y-4">
       <NowPlaying />
 
       {/* Social Links */}
