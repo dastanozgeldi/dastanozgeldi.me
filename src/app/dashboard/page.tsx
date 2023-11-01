@@ -43,7 +43,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <p className="w-full bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
+      <p className="w-full bg-secondary mt-4 mb-8 rounded-xl px-8 py-4">
         Here are my statistics so far. Soon there&apos;ll be more than YouTube.
       </p>
       <div className="mb-4 grid gap-4 sm:grid-cols-2">

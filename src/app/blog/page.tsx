@@ -18,7 +18,7 @@ type Post = {
 
 const PostItem = ({ id, data }: Post) => (
   <Link href={`/blog/${id}`}>
-    <div className="my-2 p-4 duration-500 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md">
+    <div className="my-2 p-4 duration-500 hover:bg-secondary rounded-md">
       <h1 className="text-2xl font-bold">{data.title}</h1>
       <span className="text-gray-500">{data.date}</span>
     </div>
@@ -32,7 +32,7 @@ const Blog = () => {
     <div className="pb-24">
       {posts.length > 0 ? (
         <div>
-          <p className="bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
+          <p className="bg-secondary mt-4 mb-8 rounded-xl px-8 py-4">
             I enjoy writing about my progress throughout some period of time.
           </p>
           {posts.map(({ id, data }) => (
@@ -40,7 +40,7 @@ const Blog = () => {
           ))}
         </div>
       ) : (
-        <p className="bg-gray-200 dark:bg-gray-800 mt-4 mb-8 rounded-xl px-8 py-4">
+        <p className="bg-secondary mt-4 mb-8 rounded-xl px-8 py-4">
           Posts haven&apos;t been published yet.
         </p>
       )}

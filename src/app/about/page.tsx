@@ -10,10 +10,8 @@ const About = () => {
     <section className="pb-24">
       <h1 className="text-2xl">About me</h1>
 
-      <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Hello, I&apos;m Dastan.
-      </p>
-      <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
+      <p className="my-5">Hello, I&apos;m Dastan.</p>
+      <div className="prose prose-neutral dark:prose-invert">
         <p>
           I&apos;m passionate about many fields of programming, including web,
           mobile development and generative AI.
@@ -33,7 +31,7 @@ const About = () => {
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
           >
             <div className="flex items-center">
               <div className="ml-3">GitHub</div>
@@ -43,7 +41,7 @@ const About = () => {
             rel="noopener noreferrer"
             target="_blank"
             href="https://linkedin.com/in/dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
           >
             <div className="flex items-center">
               <div className="ml-3">LinkedIn</div>
@@ -53,7 +51,7 @@ const About = () => {
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.youtube.com/@dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
           >
             <div className="flex items-center">
               <div className="ml-3">YouTube</div>
