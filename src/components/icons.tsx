@@ -15,11 +15,13 @@ import {
   Youtube,
   Mail,
   Network,
+  ChevronRight,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
+  right: ChevronRight,
   home: Home,
   about: ScanFace,
   dashboard: AlignEndHorizontal,
