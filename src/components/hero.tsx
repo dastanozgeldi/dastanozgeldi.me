@@ -18,7 +18,7 @@ const Hero = () => {
         priority
       />
       <div className="text-center py-12">
-        <p className="text-2xl ">
+        <p className="text-2xl">
           <Balancer>Building web apps</Balancer>
         </p>
         <p className="text-2xl">
