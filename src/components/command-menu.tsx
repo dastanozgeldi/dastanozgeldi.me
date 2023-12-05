@@ -1,6 +1,8 @@
 "use client";
+
 import React from "react";
 import { useRouter } from "next/navigation";
+
 import { Button } from "@/components/ui/button";
 import {
   CommandDialog,
@@ -11,6 +13,7 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
+
 import { Icons } from "./icons";
 
 type Groups = {
@@ -76,35 +79,6 @@ export const CommandMenu = () => {
                 "https://github.com/dastanozgeldi/my-website",
                 "_blank"
               )
-            ),
-        },
-      ],
-    },
-    {
-      name: "Social",
-      actions: [
-        {
-          title: "GitHub",
-          icon: <Icons.github size={16} className="mr-2" />,
-          onSelect: () =>
-            runCommand(() =>
-              window.open("https://github.com/dastanozgeldi/", "_blank")
-            ),
-        },
-        {
-          title: "Instagram",
-          icon: <Icons.instagram size={16} className="mr-2" />,
-          onSelect: () =>
-            runCommand(() =>
-              window.open("https://instagram.com/dastanozgeldi/", "_blank")
-            ),
-        },
-        {
-          title: "LinkedIn",
-          icon: <Icons.linkedin size={16} className="mr-2" />,
-          onSelect: () =>
-            runCommand(() =>
-              window.open("https://linkedin.com/in/dastanozgeldi/", "_blank")
             ),
         },
       ],
