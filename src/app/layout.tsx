@@ -6,39 +6,53 @@ import { Inter } from "next/font/google";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { config } from "@/config/site";
+import { site } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
-    default: config.title,
-    template: `%s | ${config.title}`,
+    default: site.title,
+    template: `%s | ${site.title}`,
   },
-  description: config.description,
-  openGraph: {
-    title: config.title,
-    description: config.description,
-    url: config.url,
-    images: [
-      {
-        url: config.image,
-        alt: config.title,
-      },
-    ],
-    siteName: config.title,
-    locale: config.locale,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: config.title,
-    description: config.description,
-    site: "@dastanozgeldi",
-  },
+  description: site.description,
+  keywords: site.keywords,
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.title,
+    description: site.description,
+    site: "@dastanozgeldi",
+    creator: "@dastanozgeldi",
+    images: [`${site.url}/images/og.png`],
+  },
+  openGraph: {
+    url: site.url,
+    type: "website",
+    title: site.title,
+    siteName: site.title,
+    description: site.description,
+    locale: "en-US",
+    images: [
+      {
+        url: `${site.url}/images/og.png`,
+        width: 1200,
+        height: 630,
+        alt: site.description,
+        type: "image/png",
+      },
+    ],
   },
   themeColor: "#ffffff",
   icons: {

@@ -1,7 +1,7 @@
-export const config = {
-  title: "Dastan Özgeldi",
-  description: "Building digital products, brands, and experience.",
-  image: "https://dastanozgeldi.me/brand.png",
+export const site = {
   url: "https://dastanozgeldi.me/",
-  locale: "en-US",
+  title: "Dastan Özgeldi",
+  keywords: ["dastanozgeldi", "Next.js", "React", "TypeScript", "Node.js"],
+  description: "Dastan • 16 y/o • Student • Full-stack Developer",
+  image: "https://dastanozgeldi.me/brand.png",
 };
