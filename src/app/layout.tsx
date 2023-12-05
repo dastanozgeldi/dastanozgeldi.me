@@ -6,39 +6,34 @@ import { Inter } from "next/font/google";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { config } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const title = "Dastan Özgeldi";
-const description = "Building digital products, brands, and experience.";
-const image = "https://dastanozgeldi.me/brand.png";
-const url = "https://dastanozgeldi.me/";
-const locale = "en-US";
-
 export const metadata: Metadata = {
   title: {
-    default: title,
-    template: `%s | ${title}`,
+    default: config.title,
+    template: `%s | ${config.title}`,
   },
-  description,
+  description: config.description,
   openGraph: {
-    title,
-    description,
-    url,
+    title: config.title,
+    description: config.description,
+    url: config.url,
     images: [
       {
-        url: image,
-        alt: title,
+        url: config.image,
+        alt: config.title,
       },
     ],
-    siteName: title,
-    locale,
+    siteName: config.title,
+    locale: config.locale,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title,
-    description,
+    title: config.title,
+    description: config.description,
     site: "@dastanozgeldi",
   },
   robots: {
