@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+
 import { ThemeToggle } from "./theme-toggle";
-import SupportButton from "./post/support";
 import { CommandMenu } from "./command-menu";
 
 export const Header = () => {
@@ -16,7 +16,6 @@ export const Header = () => {
 
       <div className="flex flex-row ml-0 sm:ml-2 space-x-2 items-center justify-center sm:justify-end">
         <ThemeToggle />
-        <SupportButton />
         <CommandMenu />
       </div>
     </header>
