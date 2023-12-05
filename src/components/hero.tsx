@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <>
       <Image
-        className="rounded-full"
-        src="/avatar.png"
-        alt="avatar"
+        className="rounded-full dark:border dark:border-gray-700"
+        src="/brand.png"
+        alt="brand"
         width={150}
         height={150}
         priority
