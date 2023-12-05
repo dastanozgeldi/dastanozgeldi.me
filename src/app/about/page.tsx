@@ -26,38 +26,6 @@ const About = () => {
           groups of users using the power of generative AI that serves with the
           same purpose - automating a certain task.
         </p>
-        <div className="flex flex-col gap-2 md:flex-row md:gap-2">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
-          >
-            <div className="flex items-center">
-              <div className="ml-3">GitHub</div>
-            </div>
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://linkedin.com/in/dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
-          >
-            <div className="flex items-center">
-              <div className="ml-3">LinkedIn</div>
-            </div>
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.youtube.com/@dastanozgeldi"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-muted-foreground hover:bg-secondary transition-all justify-between"
-          >
-            <div className="flex items-center">
-              <div className="ml-3">YouTube</div>
-            </div>
-          </a>
-        </div>
       </div>
     </section>
   );
