@@ -2,7 +2,6 @@ import {
   type LucideProps,
   type Icon as LucideIcon,
   AlignEndHorizontal,
-  Book,
   Code2,
   Command,
   Github,
@@ -13,7 +12,6 @@ import {
   ScanFace,
   Youtube,
   Mail,
-  Network,
   ChevronRight,
 } from "lucide-react";
 
@@ -21,10 +19,9 @@ export type Icon = LucideIcon;
 
 export const Icons = {
   right: ChevronRight,
-  home: Home,
   about: ScanFace,
   dashboard: AlignEndHorizontal,
-  projects: Network,
+  projects: Home,
   code: Code2,
   command: Command,
   mail: Mail,
