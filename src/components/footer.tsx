@@ -1,12 +1,8 @@
-import { NowPlaying } from "@/components/now-playing";
 import { FOOTER_LINKS } from "@/config/links";
 
 export const Footer = () => {
   return (
     <footer className="w-full border-t-[1px] border-t-gray-500 p-4 space-y-4">
-      <NowPlaying />
-
-      {/* Social Links */}
       <div className="flex items-center justify-center gap-3">
         {FOOTER_LINKS.map(({ href, icon }) => (
           <a
@@ -19,7 +15,6 @@ export const Footer = () => {
         ))}
       </div>
 
-      {/* Copyright */}
       <p className="text-center">
         © Dastan Özgeldi {new Date().getFullYear()}. All rights reserved.
       </p>
