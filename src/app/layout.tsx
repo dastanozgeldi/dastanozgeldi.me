@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`text-foreground bg-background ${inter.className}`}>
-        <main className="p-6 pt-3 md:pt-6 max-w-2xl m-auto">
+        <main className="p-6 max-w-2xl">
           <Header />
           {children}
           <Footer />
