@@ -9,7 +9,7 @@ type Props = {
 
 export const ProjectList = ({ projects }: { projects: Props }) => {
   return (
-    <ul className="space-y-4 py-4 mb-4">
+    <ul className="space-y-4">
       {projects.map((project) => (
         <li key={project.name}>
           <a href={project.href} className="flex flex-col space-y-1.5">

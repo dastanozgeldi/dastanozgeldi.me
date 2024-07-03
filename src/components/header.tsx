@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="mb-5 md:mb-10 flex items-center justify-between">
+    <header className="mb-5 flex items-center justify-between">
       <span className="text-md md:text-lg whitespace-nowrap font-bold">
         <Link href="/">
           <span className="cursor-pointer pr-2">
@@ -12,11 +12,11 @@ export const Header = () => {
           </span>
         </Link>
       </span>
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-2">
         {SOCIAL_LINKS.map(({ href, icon }) => (
           <a
             key={href}
-            className="duration-300 rounded-full p-3 hover:bg-secondary"
+            className="duration-300 rounded-full p-2 hover:bg-secondary"
             href={href}
           >
             {icon}
