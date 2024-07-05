@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ProjectList } from "@/components/project-list";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import data from "./data.json";
@@ -8,7 +9,12 @@ export default function Projects() {
   return (
     <section>
       <div className="mb-6">
-        <h1 className="text-lg tracking-tighter font-mono">about me</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-lg tracking-tighter font-mono">about me</h1>
+          <Link href="/resume.pdf" className="underline underline-offset-2">
+            see resume
+          </Link>
+        </div>
         <p className="font-mono tracking-tighter">
           I&apos;m a 17 y.o. developer from Almaty, Kazakhstan. I create
           websites, mobile apps, discord/telegram bots and many other stuff. I
