@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
-import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { site } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={clsx(
+        className={cn(
           "text-foreground bg-background p-6 max-w-2xl mx-auto",
           inter.className
         )}
