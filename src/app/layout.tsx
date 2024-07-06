@@ -1,9 +1,8 @@
 import "@/styles/globals.css";
-
+import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-
 import { Header } from "@/components/header";
 import { site } from "@/config/site";
 
@@ -53,7 +52,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  themeColor: "#ffffff",
   icons: {
     icon: "/brand.png",
     apple: "/brand.png",
@@ -67,11 +65,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`text-foreground bg-background ${inter.className}`}>
-        <main className="p-6 max-w-2xl">
-          <Header />
-          {children}
-        </main>
+      <body
+        className={clsx(
+          "text-foreground bg-background p-6 max-w-2xl mx-auto",
+          inter.className
+        )}
+      >
+        <Header />
+        {children}
         <Analytics />
       </body>
     </html>
