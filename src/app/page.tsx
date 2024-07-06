@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { ProjectList } from "@/components/project-list";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import data from "./data.json";
 import { getBlogPosts } from "@/blog";
+import data from "./data.json";
 
 export default function Page() {
-  const { orders, hackathons } = data;
+  const { projects } = data;
 
   const posts = getBlogPosts()
     .sort(
@@ -27,7 +26,7 @@ export default function Page() {
             see resume
           </Link>
         </div>
-        <p className="my-2">
+        <p className="mt-2">
           I&apos;m a 17 y.o. developer from Almaty, Kazakhstan. I create
           websites, mobile apps, discord/telegram bots and many other stuff. I
           love watching Whiplash, redesigning this website every other week and
@@ -35,32 +34,9 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center">
-        <Tabs defaultValue="orders" className="w-full">
-          <div className="flex items-center justify-between">
-            <h3 className="text-lg tracking-tighter font-mono">projects</h3>
-            <TabsList>
-              <TabsTrigger
-                className="font-mono tracking-tighter"
-                value="orders"
-              >
-                orders
-              </TabsTrigger>
-              <TabsTrigger
-                className="font-mono tracking-tighter"
-                value="hackathons"
-              >
-                hackathons
-              </TabsTrigger>
-            </TabsList>
-          </div>
-          <TabsContent value="orders">
-            <ProjectList projects={orders} />
-          </TabsContent>
-          <TabsContent value="hackathons">
-            <ProjectList projects={hackathons} />
-          </TabsContent>
-        </Tabs>
+      <div>
+        <h3 className="text-lg tracking-tighter font-mono mb-3">projects</h3>
+        <ProjectList projects={projects} />
       </div>
 
       <div>

@@ -1,5 +1,5 @@
 {
-  "orders": [
+  "projects": [
     {
       "name": "kelbet til",
       "description": "all kazakh literature in one place with qr codes and a built-in pdf reader.",
@@ -17,26 +17,6 @@
       "description": "imagine a school football tournament, but with a brilliant website and smm",
       "href": "https://nis-media-league.vercel.app/",
       "tag": "all students"
-    }
-  ],
-  "hackathons": [
-    {
-      "name": "aigul",
-      "description": "ai roadmap creator.",
-      "href": "https://aigul-web.vercel.app",
-      "tag": "1st place"
-    },
-    {
-      "name": "oyin ata",
-      "description": "ai html game generator. hosted on github pages.",
-      "href": "https://github.com/dastanozgeldi/oyin-ata",
-      "tag": "2nd place"
-    },
-    {
-      "name": "jazbahana",
-      "description": "social network for students focused on studying.",
-      "href": "https://github.com/dastanozgeldi/jazbahana",
-      "tag": "my first hack"
     }
   ]
 }
