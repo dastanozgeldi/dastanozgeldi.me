@@ -22,7 +22,7 @@ export default function Page() {
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
             <div className="flex w-full flex-col gap-y-1">
-              <p className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4 group-hover:dark:decoration-neutral-600">
+              <p className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4">
                 {post.metadata.title.toLowerCase()}
               </p>
               <p className="prose prose-neutral">

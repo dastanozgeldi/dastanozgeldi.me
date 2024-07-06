@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import data from "./data.json";
 import { getBlogPosts } from "@/blog";
 
-export default function Projects() {
+export default function Page() {
   const { orders, hackathons } = data;
 
   const posts = getBlogPosts()
@@ -80,7 +80,7 @@ export default function Projects() {
                 <p className="font-medium underline underline-offset-4">
                   {post.metadata.title.toLowerCase()}
                 </p>
-                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                <p className="text-sm text-neutral-600">
                   {new Date(post.metadata.date)
                     .toLocaleDateString("en-US", {
                       month: "short",
