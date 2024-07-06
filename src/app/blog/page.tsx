@@ -17,7 +17,7 @@ export default function Page() {
 
   return (
     <section>
-      <h1 className="text-2xl font-medium tracking-tighter">blog</h1>
+      <h1 className="text-2xl font-medium tracking-tighter mb-6">blog</h1>
       <div className="flex flex-col gap-8">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
