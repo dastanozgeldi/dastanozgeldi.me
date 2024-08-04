@@ -9,6 +9,7 @@ import {
   SunMedium,
   Mail,
   ChevronRight,
+  ArrowLeft,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -23,4 +24,5 @@ export const Icons = {
   linkedin: Linkedin,
   sun: SunMedium,
   moon: Moon,
+  back: ArrowLeft,
 };
