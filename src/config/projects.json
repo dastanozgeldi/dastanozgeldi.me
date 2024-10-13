@@ -7,16 +7,16 @@
       "tag": "10k+ users"
     },
     {
+      "name": "aura bank",
+      "description": "track your aura with the power of AI and compete with your friends.",
+      "href": "https://aurabank.lol/",
+      "tag": "my favorite"
+    },
+    {
       "name": "nis pm almaty",
       "description": "content-heavy multi-language school website. should've used wordpress.",
       "href": "https://fmalmnis.vercel.app",
       "tag": "13k+ visits/month"
-    },
-    {
-      "name": "nis media league",
-      "description": "imagine a school football tournament, but with a brilliant website and smm",
-      "href": "https://nis-media-league.vercel.app/",
-      "tag": "all students"
     }
   ]
 }

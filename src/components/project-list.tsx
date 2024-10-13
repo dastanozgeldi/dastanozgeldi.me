@@ -1,13 +1,7 @@
 import { Badge } from "./ui/badge";
+import { projects } from "../config/projects.json";
 
-type Props = {
-  name: string;
-  description: string;
-  href: string;
-  tag?: string;
-}[];
-
-export const ProjectList = ({ projects }: { projects: Props }) => {
+export const ProjectList = () => {
   return (
     <ul className="space-y-4">
       {projects.map((project) => (

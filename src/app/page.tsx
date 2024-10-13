@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { ProjectList } from "@/components/project-list";
 import { getBlogPosts } from "@/blog";
-import data from "./data.json";
 
 export default function Page() {
-  const { projects } = data;
-
   const posts = getBlogPosts()
     .sort(
       (a, b) =>
@@ -36,7 +33,7 @@ export default function Page() {
 
       <div>
         <h3 className="text-lg tracking-tighter font-mono mb-3">projects</h3>
-        <ProjectList projects={projects} />
+        <ProjectList />
       </div>
 
       <div>
