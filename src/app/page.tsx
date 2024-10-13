@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ProjectList } from "@/components/project-list";
-import { getBlogPosts } from "@/blog";
+import { getBlogPosts } from "@/lib/blog";
 
 export default function Page() {
   const posts = getBlogPosts()

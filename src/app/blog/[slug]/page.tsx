@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { getBlogPostBySlug } from "@/blog";
+import { getBlogPostBySlug } from "@/lib/blog";
 import redis from "@/lib/redis";
 import { ViewCounter } from "../view-counter";
 import { MDX } from "../[slug]/mdx";

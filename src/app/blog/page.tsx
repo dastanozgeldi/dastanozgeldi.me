@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
 import { Suspense } from "react";
-import { getBlogPosts } from "@/blog";
+import { getBlogPosts } from "@/lib/blog";
 import { AllViews } from "./all-views";
 
 export const metadata: Metadata = {

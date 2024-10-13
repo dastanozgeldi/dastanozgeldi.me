@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import redis from "./lib/redis";
+import redis from "./redis";
 
 type Metadata = {
   title: string;
