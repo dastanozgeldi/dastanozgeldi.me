@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { site } from "@/config/site";
@@ -73,8 +73,8 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <Analytics />
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
     </html>
   );
 }
