@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { site } from "@/config/site";
 import { getBlogPostBySlug } from "@/lib/blog";
 import redis from "@/lib/redis";
 import { ViewCounter } from "../view-counter";
@@ -34,7 +35,7 @@ export async function generateMetadata({
       description: post.metadata.description,
       publishedTime,
       type: "article",
-      url: `https://dastanozgeldi.me/blog/${post.slug}`,
+      url: `${site.url}/blog/${post.slug}`,
     },
     twitter: {
       title: post.metadata.title,
@@ -64,7 +65,7 @@ export default function Post({ params }: { params: { slug: string } }) {
             datePublished: post.metadata.date,
             dateModified: post.metadata.date,
             description: post.metadata.description,
-            url: `https://dastanozgeldi.me/blog/${post.slug}`,
+            url: `${site.url}/blog/${post.slug}`,
           }),
         }}
       />
