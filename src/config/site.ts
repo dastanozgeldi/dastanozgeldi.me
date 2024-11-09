@@ -12,4 +12,5 @@ export const site = {
   ],
   description: "Dastan • 17 y/o • Student • Full-stack Developer",
   image: "https://ozgeldi.tech/brand.png",
+  cdn: "https://utfs.io/a/u0e5kx6sa4",
 };

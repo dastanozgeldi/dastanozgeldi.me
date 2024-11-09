@@ -4,13 +4,15 @@
       "name": "kelbet til",
       "description": "all kazakh literature in one place with qr codes and a built-in pdf reader.",
       "href": "https://kelbet-til.kz",
-      "tag": "12k+ users"
+      "tag": "12k+ users",
+      "bannerId": "UXFGY7LlErcg0XOBVzJAaDjemqb3cPuwOtXUKo1YGRr27Jn5"
     },
     {
       "name": "aura bank",
       "description": "track your aura with the power of AI and compete with your friends.",
       "href": "https://aurabank.lol",
-      "tag": "my favorite"
+      "tag": "my favorite",
+      "bannerId": "UXFGY7LlErcgbzQfCsaKYnZxWl0wiEACdvFUX4V78NhcP5MD"
     }
   ]
 }
