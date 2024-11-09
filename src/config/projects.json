@@ -3,20 +3,14 @@
     {
       "name": "kelbet til",
       "description": "all kazakh literature in one place with qr codes and a built-in pdf reader.",
-      "href": "https://kelbet-til.vercel.app",
+      "href": "https://kelbet-til.kz",
       "tag": "12k+ users"
     },
     {
       "name": "aura bank",
       "description": "track your aura with the power of AI and compete with your friends.",
-      "href": "https://aurabank.lol/",
+      "href": "https://aurabank.lol",
       "tag": "my favorite"
-    },
-    {
-      "name": "nis pm almaty",
-      "description": "content-heavy multi-language school website. should've used wordpress.",
-      "href": "https://fmalmnis.vercel.app",
-      "tag": "13k+ visits/month"
     }
   ]
 }
