@@ -32,7 +32,15 @@ export default function Page() {
       </div>
 
       <div>
-        <h3 className="text-lg tracking-tighter font-mono mb-3">projects</h3>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg tracking-tighter font-mono">projects</h3>
+          <Link
+            href="/projects"
+            className="decoration-neutral-400 font-medium underline decoration-[0.1em] underline-offset-2"
+          >
+            see all
+          </Link>
+        </div>
         <ProjectList />
       </div>
 

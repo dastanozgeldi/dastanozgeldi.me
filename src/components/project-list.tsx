@@ -1,7 +1,7 @@
 import { Badge } from "./ui/badge";
 import data from "../config/projects.json";
 
-export const ProjectList = () => {
+export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
   return (
     <ul className="space-y-4">
       {data.projects.map((project) => (
@@ -18,6 +18,9 @@ export const ProjectList = () => {
               )}
             </div>
             <span className="text-muted-foreground">{project.description}</span>
+            {extended && (
+              <div className="h-96 w-full border-2 rounded-lg"></div>
+            )}
           </a>
         </li>
       ))}
