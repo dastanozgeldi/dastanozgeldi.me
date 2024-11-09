@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = posts.map((post) => ({
     url: `https://ozgeldi.tech/blog/${post.slug}`,
+    lastModified: new Date(post.metadata.date),
   }));
 
   return [
