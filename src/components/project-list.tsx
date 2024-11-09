@@ -4,9 +4,11 @@ import data from "@/config/projects.json";
 import { Badge } from "./ui/badge";
 
 export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
+  const projects = extended ? data.projects : data.projects.slice(0, 3);
+
   return (
     <ul className="space-y-4">
-      {data.projects.map((project) => (
+      {projects.map((project) => (
         <li
           key={project.name}
           className={extended ? "border rounded-lg p-4" : undefined}

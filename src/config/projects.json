@@ -13,6 +13,48 @@
       "href": "https://aurabank.lol",
       "tag": "my favorite",
       "bannerId": "UXFGY7LlErcgbzQfCsaKYnZxWl0wiEACdvFUX4V78NhcP5MD"
+    },
+    {
+      "name": "qal.ai",
+      "description": "learn anything in detail by generating graphs of related topics.",
+      "href": "https://qalai.vercel.app",
+      "tag": "n! incubator",
+      "bannerId": "UXFGY7LlErcg4Vi1En25gHNPA7GoxqkyKFrdjLSlau68ibMJ"
+    },
+    {
+      "name": "nis phm almaty",
+      "description": "my school requested a modern-looking website, and I delivered.",
+      "href": "https://fmalmnis.vercel.app",
+      "tag": "school",
+      "bannerId": "UXFGY7LlErcgoGzI4hpPkQt1WgzPsxSCcTMZANnYRhBvpVEd"
+    },
+    {
+      "name": "nis media league",
+      "description": "a website for our school's soccer tournament held by me and my team.",
+      "href": "https://nis-media-league.vercel.app",
+      "tag": "school",
+      "bannerId": "UXFGY7LlErcgqZXe4R3lMVZbvuwpLG54oQtK07k3BjTHFcXJ"
+    },
+    {
+      "name": "nis sheker",
+      "description": "this website was developed for presidential elections in our school.",
+      "href": "https://sheker.vercel.app",
+      "tag": "3400+ visitors",
+      "bannerId": "UXFGY7LlErcgvdmr6RKMFPGtm9s3w4HYzyea6xjO8do51TuX"
+    },
+    {
+      "name": "qysqa",
+      "description": "my very own url shortener with a 🇰🇿 name.",
+      "href": "https://qysqa.vercel.app",
+      "tag": "baby project",
+      "bannerId": "UXFGY7LlErcgRMsO7Cil5LyhIO3toeN04HSFn9zdc68DxKCf"
+    },
+    {
+      "name": "nis computer science week",
+      "description": "a website quickly designed for our school's computer science week.",
+      "href": "https://ict-dekada.vercel.app",
+      "tag": "school",
+      "bannerId": "UXFGY7LlErcg0F7c2DJAaDjemqb3cPuwOtXUKo1YGRr27Jn5"
     }
   ]
 }
