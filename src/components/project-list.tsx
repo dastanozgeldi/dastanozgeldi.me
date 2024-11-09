@@ -1,10 +1,10 @@
 import { Badge } from "./ui/badge";
-import { projects } from "../config/projects.json";
+import data from "../config/projects.json";
 
 export const ProjectList = () => {
   return (
     <ul className="space-y-4">
-      {projects.map((project) => (
+      {data.projects.map((project) => (
         <li key={project.name}>
           <a href={project.href} className="flex flex-col space-y-1.5">
             <div>
