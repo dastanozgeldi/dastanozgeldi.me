@@ -31,8 +31,8 @@ export default async function Page() {
         <TableHeader>
           <TableRow>
             <TableHead className="w-[50px]">Place</TableHead>
-            <TableHead>Player Name</TableHead>
-            <TableHead>Score</TableHead>
+            <TableHead>Player</TableHead>
+            <TableHead className="w-[50px]">Score</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -40,7 +40,7 @@ export default async function Page() {
             <TableRow key={index}>
               <TableCell>{index + 1}</TableCell>
               <TableCell>{player_name}</TableCell>
-              <TableCell>{score}</TableCell>
+              <TableCell className="text-right">{score}</TableCell>
             </TableRow>
           ))}
         </TableBody>
