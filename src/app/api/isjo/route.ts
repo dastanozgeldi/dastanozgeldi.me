@@ -1,7 +1,6 @@
-import { neon } from "@neondatabase/serverless";
+import { sql } from "@/lib/db";
 
-export async function GET(request: Request) {
-  const sql = neon(process.env.DATABASE_URL!);
+export async function GET() {
   const response = await sql`
       SELECT player_name, score, created_at
       FROM sharik_jargysh_stats
@@ -16,7 +15,6 @@ export async function POST(request: Request) {
   const { player_name, score } = await request.json();
 
   try {
-    const sql = neon(process.env.DATABASE_URL!);
     await sql`CREATE TABLE IF NOT EXISTS sharik_jargysh_stats (
       id SERIAL PRIMARY KEY,
       player_name VARCHAR(255) NOT NULL,
