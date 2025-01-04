@@ -70,7 +70,7 @@ export default function Post({ params }: { params: { slug: string } }) {
         }}
       />
 
-      <h1 className="mb-2 text-3xl font-medium tracking-tighter">
+      <h1 className="mb-2 text-3xl font-bold tracking-tighter">
         {post.metadata.title}
       </h1>
       <p className="mb-4 text-neutral-600">{post.metadata.description}</p>
