@@ -8,14 +8,12 @@ import {
 } from "@/components/ui/table";
 import { sql } from "@/lib/db";
 
-export const dynamic = "force-dynamic";
-
 export async function Leaderboard() {
   const stats = await sql`
     SELECT player_name, score, created_at
     FROM sharik_jargysh_stats
     ORDER BY score DESC
-    LIMIT 5;
+    LIMIT 10;
   `;
 
   return (
