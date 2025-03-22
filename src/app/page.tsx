@@ -26,7 +26,7 @@ export default function Page() {
         <p className="mt-2">
           I&apos;m a 17 y.o. developer from Almaty, Kazakhstan. I create
           websites, mobile apps, discord/telegram bots and many other stuff. I
-          love watching Whiplash, redesigning this website every other week and
+          love watching Whiplash, redesigning this page every other week and
           abusing LLMs to win hackathons.
         </p>
       </div>
