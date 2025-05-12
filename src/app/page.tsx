@@ -9,7 +9,7 @@ export default function Page() {
         new Date(b.metadata.date).getTime() -
         new Date(a.metadata.date).getTime()
     )
-    .slice(0, 4);
+    .slice(0, 3);
 
   return (
     <section className="space-y-8">
@@ -24,7 +24,7 @@ export default function Page() {
           </Link>
         </div>
         <p className="mt-2">
-          I&apos;m a 17 y.o. developer from Almaty, Kazakhstan. I create
+          I&apos;m an 18 y.o. developer from Almaty, Kazakhstan. I create
           websites, mobile apps, discord/telegram bots and many other stuff. I
           love watching Whiplash, redesigning this page every other week and
           abusing LLMs to win hackathons.
