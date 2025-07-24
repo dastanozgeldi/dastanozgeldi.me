@@ -4,12 +4,11 @@ import {
   Command,
   Github,
   Home,
-  Linkedin,
   Moon,
   SunMedium,
-  Mail,
   ChevronRight,
   ArrowLeft,
+  Twitter,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -19,9 +18,8 @@ export const Icons = {
   projects: Home,
   code: Code2,
   command: Command,
-  mail: Mail,
   github: Github,
-  linkedin: Linkedin,
+  twitter: Twitter,
   sun: SunMedium,
   moon: Moon,
   back: ArrowLeft,
