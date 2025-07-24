@@ -14,6 +14,8 @@ export const Header = () => {
             key={href}
             className="duration-300 rounded-full p-2 hover:bg-secondary"
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {icon}
           </a>
