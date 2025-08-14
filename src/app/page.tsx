@@ -14,7 +14,7 @@ export default function Page() {
     .slice(0, 3);
 
   return (
-    <div className="flex flex-col gap-8">
+    <>
       <div className="flex items-center gap-4">
         <Image
           className="rounded-full"
@@ -30,6 +30,8 @@ export default function Page() {
           </p>
         </div>
       </div>
+
+      <Separator />
 
       <Block
         title="about me"
@@ -65,7 +67,11 @@ export default function Page() {
           ))}
         </div>
       </Block>
-    </div>
+
+      <p className="text-center font-mono tracking-tight text-sm">
+        follow @dastanozgeldi
+      </p>
+    </>
   );
 }
 
@@ -79,7 +85,7 @@ function Block({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <>
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-lg tracking-tighter font-mono">{title}</h3>
         <Link
@@ -90,6 +96,9 @@ function Block({
         </Link>
       </div>
       {children}
-    </div>
+      <Separator />
+    </>
   );
 }
+
+const Separator = () => <div className="h-0.5 bg-muted my-6" />;
