@@ -9,16 +9,16 @@
     "lint": "next lint"
   },
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "@upstash/redis": "^1.32.0",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.252.0",
     "next": "^14.2.4",
     "next-mdx-remote": "^5.0.0",
-    "next-view-transitions": "^0.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^1.13.2",

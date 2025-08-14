@@ -1,5 +1,5 @@
-import { Icons } from "@/components/icons";
-import { Link } from "next-view-transitions";
+import { ArrowLeftIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function BlogLayout({
   children,
@@ -13,7 +13,7 @@ export default function BlogLayout({
         href="/blog"
         className="mt-6 gap-1 flex items-center justify-center"
       >
-        <Icons.back className="w-5 h-5" /> see all posts
+        <ArrowLeftIcon className="w-5 h-5" /> see all posts
       </Link>
     </>
   );

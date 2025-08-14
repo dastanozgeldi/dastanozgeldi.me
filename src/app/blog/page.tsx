@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 import { Suspense } from "react";
 import { getBlogPosts } from "@/lib/blog";
-import { AllViews } from "./all-views";
+import redis from "@/lib/redis";
+import { formatDate } from "@/lib/formatters";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -16,7 +17,7 @@ export default function Page() {
   );
 
   return (
-    <section>
+    <>
       <h1 className="text-2xl font-medium tracking-tighter mb-6">blog</h1>
       <div className="flex flex-col gap-8">
         {posts.map((post) => (
@@ -28,23 +29,30 @@ export default function Page() {
               <p className="prose prose-neutral">
                 {post.metadata.description.toLowerCase()}
               </p>
-              <p className="text-sm text-neutral-600">
-                {new Date(post.metadata.date)
-                  .toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                  })
-                  .toLowerCase()}
-                <Suspense>
-                  {" • "}
+              <div className="text-sm text-muted-foreground">
+                {formatDate(post.metadata.date, {
+                  short: true,
+                }).toLowerCase()}
+                {" / "}
+                <Suspense fallback={<>loading views...</>}>
                   <AllViews slug={post.slug} />
                 </Suspense>
-              </p>
+              </div>
             </div>
           </Link>
         ))}
       </div>
-    </section>
+    </>
   );
+}
+
+async function AllViews({ slug }: { slug: string }) {
+  const allViews = (await redis.get("views")) as {
+    slug: string;
+    views: number;
+  }[];
+
+  const views = allViews.find((view) => view.slug === slug)?.views ?? 0;
+
+  return <>{views.toLocaleString()} views</>;
 }

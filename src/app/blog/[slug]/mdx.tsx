@@ -1,7 +1,7 @@
 import React, { Children, createElement } from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { Link } from "next-view-transitions";
 import { codeToHtml } from "shiki";
+import Link from "next/link";
 
 function CustomLink({
   href,

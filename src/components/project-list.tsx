@@ -1,10 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/config/site";
 import data from "@/config/projects.json";
 import { Badge } from "./ui/badge";
-import Link from "next/link";
 
-export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
+export function ProjectList({ extended = false }: { extended?: boolean }) {
   const projects = extended ? data.projects : data.projects.slice(0, 3);
 
   return (
@@ -12,11 +12,11 @@ export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
       {projects.map((project) => {
         const LinkComponent = project.href.startsWith("http") ? "a" : Link;
         return (
-          <li
-            key={project.name}
-            className={extended ? "border rounded-lg p-4" : undefined}
-          >
-            <LinkComponent href={project.href} className="flex flex-col space-y-1.5 mb-3">
+          <li key={project.name} className="border rounded-lg p-3">
+            <LinkComponent
+              href={project.href}
+              className="flex flex-col space-y-1.5 mb-3"
+            >
               <div>
                 <span className="font-medium underline underline-offset-4">
                   {project.name}
@@ -31,6 +31,7 @@ export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
                 {project.description}
               </span>
             </LinkComponent>
+
             {extended && (
               <Image
                 className="rounded-lg shadow-lg"
@@ -45,4 +46,4 @@ export const ProjectList = ({ extended = false }: { extended?: boolean }) => {
       })}
     </ul>
   );
-};
+}
