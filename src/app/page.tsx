@@ -68,9 +68,9 @@ export default function Page() {
         </div>
       </Block>
 
-      <p className="text-center font-mono tracking-tight text-sm">
+      <footer className="text-center font-mono text-sm tracking-tight">
         follow @dastanozgeldi
-      </p>
+      </footer>
     </>
   );
 }

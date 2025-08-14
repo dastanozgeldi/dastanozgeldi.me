@@ -80,7 +80,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "text-foreground bg-background p-6 max-w-2xl mx-auto",
+          "p-3 max-w-2xl m-auto",
           inter.className
         )}
       >
