@@ -38,7 +38,7 @@ export default function Post({
       <h1 className="mb-2 text-3xl font-bold tracking-tighter">
         {post.metadata.title}
       </h1>
-      <p className="mb-4 text-neutral-600">{post.metadata.description}</p>
+      <p className="mb-4 text-muted-foreground">{post.metadata.description}</p>
       <div className="mb-8 flex items-center justify-between text-sm text-muted-foreground">
         <span>{formatDate(post.metadata.date)}</span>
         <Suspense fallback={<>loading views...</>}>

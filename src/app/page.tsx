@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ProjectList } from "@/components/project-list";
 import { getBlogPosts } from "@/lib/blog";
-import Image from "next/image";
 import { formatDate } from "@/lib/formatters";
 
 export default function Page() {
@@ -14,7 +14,7 @@ export default function Page() {
     .slice(0, 3);
 
   return (
-    <section className="space-y-8">
+    <div className="flex flex-col gap-8">
       <div className="flex items-center gap-4">
         <Image
           className="rounded-full"
@@ -55,7 +55,7 @@ export default function Page() {
                 <p className="font-medium underline underline-offset-4">
                   {post.metadata.title.toLowerCase()}
                 </p>
-                <p className="text-sm text-neutral-600">
+                <p className="text-sm text-muted-foreground">
                   {formatDate(post.metadata.date, {
                     short: true,
                   }).toLowerCase()}
@@ -65,7 +65,7 @@ export default function Page() {
           ))}
         </div>
       </Block>
-    </section>
+    </div>
   );
 }
 
