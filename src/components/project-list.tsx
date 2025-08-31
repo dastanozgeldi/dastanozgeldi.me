@@ -40,7 +40,7 @@ export function ProjectList({ extended = false }: { extended?: boolean }) {
 
             {extended && (
               <Image
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg aspect-video object-cover"
                 alt={project.name}
                 src={`${site.cdn}/${project.bannerId}`}
                 width={800}
