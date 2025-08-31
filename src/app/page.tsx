@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ProjectList } from "@/components/project-list";
 import { getBlogPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/formatters";
+import { MapPinIcon } from "lucide-react";
 
 export default function Page() {
   const posts = getBlogPosts()
@@ -27,6 +28,9 @@ export default function Page() {
           <h1 className="text-3xl font-bold">Dastan Ozgeldi</h1>
           <p className="text-muted-foreground">
             18 / software engineer @ defect.kz
+          </p>
+          <p className="text-muted-foreground flex items-center gap-1 text-sm">
+            <MapPinIcon className="h-4 w-4" /> Tokyo, Japan
           </p>
         </div>
       </div>
