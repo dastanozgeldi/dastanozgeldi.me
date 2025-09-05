@@ -76,6 +76,13 @@
       "href": "https://ict-dekada.vercel.app",
       "tag": "school",
       "bannerId": "UXFGY7LlErcg0F7c2DJAaDjemqb3cPuwOtXUKo1YGRr27Jn5"
+    },
+    {
+      "name": "joldar",
+      "description": "kazakhstan road quality report web app",
+      "href": "/",
+      "tag": "2021",
+      "bannerId": "UXFGY7LlErcgIQx8aWt06e5dg3bv9VhAT8Y4qmOUrpsLkzR1"
     }
   ]
 }
