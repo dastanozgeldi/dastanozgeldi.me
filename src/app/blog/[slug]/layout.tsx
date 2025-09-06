@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeftIcon } from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function BlogLayout({
@@ -10,11 +10,20 @@ export default function BlogLayout({
   return (
     <>
       {children}
-      <Button asChild variant="outline" className="mt-6">
-        <Link href="/blog">
-          <ArrowLeftIcon className="w-4 h-4" /> see all posts
-        </Link>
-      </Button>
+      <div className="border-b my-6" />
+      <div className="mb-3 flex items-center justify-between">
+        <Button asChild variant="outline">
+          <Link href="/blog">
+            <ArrowLeftIcon className="w-4 h-4" /> see all posts
+          </Link>
+        </Button>
+
+        <Button variant="outline" asChild>
+          <Link href="/projects">
+            see projects <ArrowRightIcon className="w-4 h-4" />
+          </Link>
+        </Button>
+      </div>
     </>
   );
 }
