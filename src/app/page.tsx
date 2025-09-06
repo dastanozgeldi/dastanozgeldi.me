@@ -19,7 +19,7 @@ export default function Page() {
       <div className="flex items-center gap-4">
         <Image
           className="rounded-full"
-          src="/pfp.jpeg"
+          src="/pfp.jpg"
           width={100}
           height={100}
           alt="profile picture"
@@ -27,7 +27,7 @@ export default function Page() {
         <div>
           <h1 className="text-3xl font-bold">Dastan Ozgeldi</h1>
           <p className="text-muted-foreground">
-            18 / software engineer @ defect.kz
+            18 / founding engineer @ defect.kz
           </p>
           <p className="text-muted-foreground flex items-center gap-1 text-sm">
             <MapPinIcon className="h-4 w-4" /> Tokyo, Japan
