@@ -34,7 +34,7 @@ export default function Page() {
                   short: true,
                 }).toLowerCase()}
                 {" / "}
-                <Suspense fallback={<>loading views...</>}>
+                <Suspense fallback={<>... views</>}>
                   <AllViews slug={post.slug} />
                 </Suspense>
               </div>
