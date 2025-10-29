@@ -79,12 +79,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "p-3 max-w-2xl m-auto",
-          inter.className
-        )}
-      >
+      <body className={cn("p-3 max-w-2xl m-auto", inter.className)}>
         <PostHogProvider>
           <header className="mb-3 flex items-center justify-between">
             <span className="text-md md:text-lg whitespace-nowrap font-bold pr-2">
@@ -103,7 +98,6 @@ export default function RootLayout({
           {children}
         </PostHogProvider>
       </body>
-      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }
