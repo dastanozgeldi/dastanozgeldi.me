@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, TwitterIcon } from "lucide-react";
+import { PostHogProvider } from "@/components/PostHogProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -84,21 +85,23 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <header className="mb-3 flex items-center justify-between">
-          <span className="text-md md:text-lg whitespace-nowrap font-bold pr-2">
-            <Link href="/">hi, i&apos;m dastan ozgeldi</Link>
-          </span>
-          <div className="flex items-center justify-center gap-2">
-            {links.map(({ href, icon }) => (
-              <Button key={href} variant="ghost" size="icon" asChild>
-                <a href={href} target="_blank" rel="noopener noreferrer">
-                  {icon}
-                </a>
-              </Button>
-            ))}
-          </div>
-        </header>
-        {children}
+        <PostHogProvider>
+          <header className="mb-3 flex items-center justify-between">
+            <span className="text-md md:text-lg whitespace-nowrap font-bold pr-2">
+              <Link href="/">hi, i&apos;m dastan ozgeldi</Link>
+            </span>
+            <div className="flex items-center justify-center gap-2">
+              {links.map(({ href, icon }) => (
+                <Button key={href} variant="ghost" size="icon" asChild>
+                  <a href={href} target="_blank" rel="noopener noreferrer">
+                    {icon}
+                  </a>
+                </Button>
+              ))}
+            </div>
+          </header>
+          {children}
+        </PostHogProvider>
       </body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
