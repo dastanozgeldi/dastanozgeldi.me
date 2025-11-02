@@ -1,14 +1,7 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="flex items-center justify-center">
       <span className="text-sm text-muted-foreground font-mono">
-        i&apos;m{" "}
-        <Link href="/" className="font-mono whitespace-nowrap underline">
-          @dastanozgeldi
-        </Link>{" "}
-        on{" "}
         <a
           href="https://x.com/dastanozgeldi"
           target="_blank"
@@ -27,7 +20,6 @@ export default function Footer() {
           linkedin
         </a>
         {", "}
-        and{" "}
         <a
           href="https://github.com/dastanozgeldi"
           target="_blank"
@@ -36,7 +28,6 @@ export default function Footer() {
         >
           github
         </a>
-        .
       </span>
     </footer>
   );
