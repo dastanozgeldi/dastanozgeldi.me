@@ -14,9 +14,7 @@ export default function Page() {
         />
         <div>
           <h1 className="text-2xl font-bold">Dastan Ozgeldi</h1>
-          <p className="text-muted-foreground">
-            18 / founding engineer @ defect.kz
-          </p>
+          <p className="text-muted-foreground">swe @ defect.kz</p>
           <p className="text-muted-foreground flex items-center gap-1 text-sm">
             <MapPinIcon className="h-4 w-4" /> Tokyo, Japan
           </p>
