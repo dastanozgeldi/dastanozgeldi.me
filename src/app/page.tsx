@@ -1,31 +1,19 @@
-import Link from "next/link";
 import Image from "next/image";
-import { ProjectList } from "@/components/project-list";
-import { getBlogPosts } from "@/lib/blog";
-import { formatDate } from "@/lib/formatters";
 import { MapPinIcon } from "lucide-react";
 
 export default function Page() {
-  const posts = getBlogPosts()
-    .sort(
-      (a, b) =>
-        new Date(b.metadata.date).getTime() -
-        new Date(a.metadata.date).getTime()
-    )
-    .slice(0, 3);
-
   return (
-    <>
-      <div className="flex items-center gap-4">
+    <div className="flex-1 flex flex-col space-y-6 items-center justify-center">
+      <header className="w-full flex items-center gap-4">
         <Image
           className="rounded-full"
           src="/pfp.jpg"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           alt="profile picture"
         />
         <div>
-          <h1 className="text-3xl font-bold">Dastan Ozgeldi</h1>
+          <h1 className="text-2xl font-bold">Dastan Ozgeldi</h1>
           <p className="text-muted-foreground">
             18 / founding engineer @ defect.kz
           </p>
@@ -33,76 +21,24 @@ export default function Page() {
             <MapPinIcon className="h-4 w-4" /> Tokyo, Japan
           </p>
         </div>
-      </div>
+      </header>
 
-      <Separator />
-
-      <Block
-        title="about me"
-        link={{ label: "see resume", href: "/resume.pdf" }}
-      >
-        <p className="mt-2">
-          I&apos;m an 18 y.o. developer from Almaty, Kazakhstan. I create
-          websites, mobile apps, discord/telegram bots and many other stuff. I
-          love watching Whiplash, redesigning this page every other week and
-          abusing LLMs to win hackathons.
-        </p>
-      </Block>
-
-      <Block title="projects" link={{ label: "see all", href: "/projects" }}>
-        <ProjectList />
-      </Block>
-
-      <Block title="blog" link={{ label: "see all", href: "/blog" }}>
-        <div className="flex flex-col gap-4 my-3">
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="">
-              <div className="flex w-full justify-between">
-                <p className="font-medium underline underline-offset-4">
-                  {post.metadata.title.toLowerCase()}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {formatDate(post.metadata.date, {
-                    short: true,
-                  }).toLowerCase()}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </Block>
-
-      <footer className="text-center font-mono text-sm tracking-tight">
-        follow @dastanozgeldi
-      </footer>
-    </>
+      <p className="font-mono tracking-tighter">
+        I&apos;m an 18 y.o. builder from Almaty, Kazakhstan. Been coding since
+        13. Currently studying my first year in Tokyo and working at{" "}
+        <a href="https://defect.kz" className="font-mono underline">
+          defect.kz
+        </a>
+        . You might wanna look at what I&apos;ve{" "}
+        <a href="/projects" className="font-mono underline">
+          built
+        </a>{" "}
+        or{" "}
+        <a href="/blog" className="font-mono underline">
+          wrote
+        </a>{" "}
+        so far.
+      </p>
+    </div>
   );
 }
-
-function Block({
-  title,
-  link,
-  children,
-}: {
-  title: string;
-  link: { label: string; href: string };
-  children: React.ReactNode;
-}) {
-  return (
-    <>
-      <div className="flex items-center justify-between mb-3">
-        <h3 className="text-lg tracking-tighter font-mono">{title}</h3>
-        <Link
-          href={link.href}
-          className="decoration-neutral-400 font-medium underline decoration-[0.1em] underline-offset-2"
-        >
-          {link.label}
-        </Link>
-      </div>
-      {children}
-      <Separator />
-    </>
-  );
-}
-
-const Separator = () => <div className="h-0.5 bg-muted my-6" />;

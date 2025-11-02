@@ -2,21 +2,21 @@
   "projects": [
     {
       "name": "defect ai",
-      "description": "ai-powered medical docs audit that reduces penalties up to 90%",
+      "description": "helping clinics reduce claim denials by building ai agents.",
       "href": "https://defect.kz",
       "tag": "medtech",
       "bannerId": "UXFGY7LlErcgYLPR6NkN1DRmibKkojeBWUv9hqTl4aFwS50u"
     },
     {
       "name": "kelbet til",
-      "description": "all school kazakh literature in one place with qr codes and a built-in pdf reader.",
+      "description": "all kazakh literature collected in one place.",
       "href": "https://kelbet-til.kz",
       "tag": "15k+ users",
       "bannerId": "UXFGY7LlErcg0XOBVzJAaDjemqb3cPuwOtXUKo1YGRr27Jn5"
     },
     {
       "name": "holodomat",
-      "description": "smart refrigerators with mobile payment integration. customizable snacks.",
+      "description": "transfering cheap display refrigerators into vending machine competitors.",
       "href": "/",
       "tag": "2023-25",
       "bannerId": "UXFGY7LlErcgYMHNTvkN1DRmibKkojeBWUv9hqTl4aFwS50u"
