@@ -1,5 +1,11 @@
+import withMDX from "@next/mdx";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  experimental: {
+    mdxRs: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -26,4 +32,4 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
 };
 
-module.exports = nextConfig;
+export default withMDX(nextConfig);
