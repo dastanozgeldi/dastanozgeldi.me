@@ -6,7 +6,6 @@ export type Post = {
   date: string;
   title: string;
   views: number;
-  viewsFormatted: string;
 };
 
 // shape of the HSET in redis
@@ -21,7 +20,6 @@ export const getPosts = async () => {
     return {
       ...post,
       views,
-      viewsFormatted: views.toLocaleString(),
     };
   });
   return posts;
