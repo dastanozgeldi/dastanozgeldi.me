@@ -1,36 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { getBlogPosts } from "@/lib/blog";
 import redis from "@/lib/redis";
 import { formatDate } from "@/lib/formatters";
+import { getPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Articles on programming, lifestyle, and more.",
 };
 
-export default function Page() {
-  const posts = getBlogPosts().sort(
-    (a, b) =>
-      new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
-  );
+export default async function Page() {
+  const posts = await getPosts();
 
   return (
-    <>
+    <div className="flex-1">
       <h1 className="text-2xl font-medium tracking-tighter mb-6">blog</h1>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
-            <div className="flex w-full flex-col gap-y-1">
-              <p className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4">
-                {post.metadata.title.toLowerCase()}
-              </p>
-              <p className="prose prose-neutral">
-                {post.metadata.description.toLowerCase()}
-              </p>
+            <div className="flex sm:items-center sm:justify-between w-full flex-col sm:flex-row gap-y-1">
+              <span className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4">
+                {post.title.toLowerCase()}
+              </span>
               <div className="text-sm text-muted-foreground">
-                {formatDate(post.metadata.date, {
+                {formatDate(post.date, {
                   short: true,
                 }).toLowerCase()}
                 {" / "}
@@ -42,7 +36,7 @@ export default function Page() {
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

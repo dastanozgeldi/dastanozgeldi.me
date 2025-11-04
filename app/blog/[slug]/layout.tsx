@@ -14,13 +14,13 @@ export default function BlogLayout({
       <div className="mb-3 flex items-center justify-between">
         <Button asChild variant="outline">
           <Link href="/blog">
-            <ArrowLeftIcon className="w-4 h-4" /> see all posts
+            <ArrowLeftIcon className="size-4" /> see all posts
           </Link>
         </Button>
 
         <Button variant="outline" asChild>
           <Link href="/projects">
-            see projects <ArrowRightIcon className="w-4 h-4" />
+            see projects <ArrowRightIcon className="size-4" />
           </Link>
         </Button>
       </div>

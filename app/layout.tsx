@@ -3,8 +3,6 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { site } from "@/config/site";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { PostHogProvider } from "@/components/PostHogProvider";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 
@@ -69,15 +67,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6 bg-gradient-to-b from-background to-blue-50",
+          "py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6 bg-linear-to-b from-background to-blue-50",
           inter.className
         )}
       >
-        <PostHogProvider>
-          <Nav />
-          {children}
-          <Footer />
-        </PostHogProvider>
+        <Nav />
+        {children}
+        <Footer />
       </body>
     </html>
   );

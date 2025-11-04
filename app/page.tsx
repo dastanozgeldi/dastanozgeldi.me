@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { MapPinIcon } from "lucide-react";
 
@@ -16,7 +17,7 @@ export default function Page() {
           <h1 className="text-2xl font-bold">Dastan Ozgeldi</h1>
           <p className="text-muted-foreground">swe @ defect.kz</p>
           <p className="text-muted-foreground flex items-center gap-1 text-sm">
-            <MapPinIcon className="h-4 w-4" /> Tokyo, Japan
+            <MapPinIcon className="size-4" /> Tokyo, Japan
           </p>
         </div>
       </header>
@@ -28,13 +29,13 @@ export default function Page() {
           defect.kz
         </a>
         . You might wanna look at what I&apos;ve{" "}
-        <a href="/projects" className="font-mono underline">
+        <Link href="/projects" className="font-mono underline">
           built
-        </a>{" "}
+        </Link>{" "}
         or{" "}
-        <a href="/blog" className="font-mono underline">
+        <Link href="/blog" className="font-mono underline">
           wrote
-        </a>{" "}
+        </Link>{" "}
         so far.
       </p>
     </div>
