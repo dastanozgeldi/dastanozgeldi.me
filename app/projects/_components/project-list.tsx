@@ -1,8 +1,8 @@
-import { ExternalLinkIcon } from "lucide-react";
 import Image from "next/image";
+import { ExternalLinkIcon } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { site } from "@/config/site";
 import data from "@/config/projects.json";
-import { Badge } from "./ui/badge";
 
 export function ProjectList({ extended = false }: { extended?: boolean }) {
   const projects = extended ? data.projects : data.projects.slice(0, 3);
