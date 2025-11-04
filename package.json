@@ -1,15 +1,11 @@
 {
-  "name": "ozgeldi.tech",
-  "version": "0.1.0",
+  "name": "dastanozgeldi.com",
+  "description": "dastanozgeldi.com (personal page)",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
-  },
-  "engines": {
-    "node": "22.x"
+    "start": "next start"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
