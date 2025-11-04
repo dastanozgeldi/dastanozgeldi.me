@@ -16,7 +16,7 @@
     "@upstash/redis": "^1.32.0",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
-    "lucide-react": "^0.252.0",
+    "lucide-react": "^0.552.0",
     "next": "16.0.1",
     "next-mdx-remote": "^5.0.0",
     "posthog-js": "^1.281.0",
@@ -40,9 +40,10 @@
     "typescript": "^5.5.3"
   },
   "pnpm": {
-    "overrides": {
-      "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+    "pnpm": {
+      "onlyBuiltDependencies": [
+        "sharp"
+      ]
     }
   }
 }
