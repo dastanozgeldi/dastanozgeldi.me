@@ -7,11 +7,12 @@ import { formatDate } from "@/lib/formatters";
 import redis from "@/lib/redis";
 import { MDX } from "./mdx";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata | undefined> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+): Promise<Metadata | undefined> {
+  const params = await props.params;
   const post = getBlogPostBySlug(params.slug);
   if (!post) {
     return;
@@ -38,7 +39,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default async function Post(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const post = getBlogPostBySlug(params.slug);
   if (!post) notFound();
 
