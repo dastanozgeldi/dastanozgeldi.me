@@ -3,8 +3,6 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { site } from "@/config/site";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { PostHogProvider } from "@/components/PostHogProvider";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 
@@ -73,11 +71,9 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <PostHogProvider>
-          <Nav />
-          {children}
-          <Footer />
-        </PostHogProvider>
+        <Nav />
+        {children}
+        <Footer />
       </body>
     </html>
   );
