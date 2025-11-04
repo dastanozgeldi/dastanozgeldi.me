@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { getBlogPosts } from "@/lib/blog";
 import redis from "@/lib/redis";
 import { formatDate } from "@/lib/formatters";
 
@@ -11,16 +10,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const posts = getBlogPosts().sort(
-    (a, b) =>
-      new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
-  );
-
   return (
     <>
       <h1 className="text-2xl font-medium tracking-tighter mb-6">blog</h1>
       <div className="flex flex-col gap-8">
-        {posts.map((post) => (
+        {[].map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
             <div className="flex w-full flex-col gap-y-1">
               <p className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4">

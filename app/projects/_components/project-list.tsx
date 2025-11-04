@@ -4,12 +4,10 @@ import { Badge } from "@/components/ui/badge";
 import { site } from "@/config/site";
 import data from "@/config/projects.json";
 
-export function ProjectList({ extended = false }: { extended?: boolean }) {
-  const projects = extended ? data.projects : data.projects.slice(0, 3);
-
+export function ProjectList() {
   return (
     <ul className="space-y-4">
-      {projects.map((project) => {
+      {data.projects.map((project) => {
         return (
           <li key={project.name} className="border rounded-lg p-3">
             <a
@@ -38,15 +36,13 @@ export function ProjectList({ extended = false }: { extended?: boolean }) {
               </span>
             </a>
 
-            {extended && (
-              <Image
-                className="rounded-lg shadow-lg aspect-video object-cover"
-                alt={project.name}
-                src={`${site.cdn}/${project.bannerId}`}
-                width={800}
-                height={400}
-              />
-            )}
+            <Image
+              className="rounded-lg shadow-lg aspect-video object-cover"
+              alt={project.name}
+              src={`${site.cdn}/${project.bannerId}`}
+              width={800}
+              height={400}
+            />
           </li>
         );
       })}
