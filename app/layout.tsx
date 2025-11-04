@@ -64,10 +64,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-linear-to-b from-background to-blue-50">
+    <html lang="en">
       <body
         className={cn(
-          "py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6",
+          "py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6 bg-linear-to-b from-background to-blue-50",
           inter.className
         )}
       >
