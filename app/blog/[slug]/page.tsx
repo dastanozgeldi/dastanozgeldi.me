@@ -10,7 +10,7 @@ export default async function Post({
   const { slug } = await params;
 
   const { default: Post, metadata } = await import(`@/posts/${slug}.mdx`);
-  console.log(metadata);
+
   return (
     <>
       <header>

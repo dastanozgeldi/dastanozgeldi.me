@@ -3,28 +3,33 @@ import Link from "next/link";
 import { Suspense } from "react";
 import redis from "@/lib/redis";
 import { formatDate } from "@/lib/formatters";
+import { getPosts } from "@/lib/get-posts";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Articles on programming, lifestyle, and more.",
 };
 
-export default function Page() {
+export default async function Page() {
+  const posts = await getPosts();
+
   return (
     <>
       <h1 className="text-2xl font-medium tracking-tighter mb-6">blog</h1>
       <div className="flex flex-col gap-8">
-        {[].map((post) => (
+        {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
             <div className="flex w-full flex-col gap-y-1">
               <p className="text-lg font-medium group-hover:underline group-hover:decoration-neutral-400 group-hover:underline-offset-4">
-                {post.metadata.title.toLowerCase()}
+                {post.title.toLowerCase()}
               </p>
-              <p className="prose prose-neutral">
-                {post.metadata.description.toLowerCase()}
-              </p>
+              {post.description && (
+                <p className="prose prose-neutral">
+                  {post.description.toLowerCase()}
+                </p>
+              )}
               <div className="text-sm text-muted-foreground">
-                {formatDate(post.metadata.date, {
+                {formatDate(post.date, {
                   short: true,
                 }).toLowerCase()}
                 {" / "}

@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "slug": "my-2024-in-tech",
+      "title": "My 2024 in Tech",
+      "date": "2025-01-04"
+    },
+    {
+      "slug": "why-your-tech-stack-doesnt-matter",
+      "title": "Why Your Tech Stack Doesn't Matter",
+      "date": "2024-08-02"
+    },
+    {
+      "slug": "medtech-hackathon",
+      "title": "MedTech Hackathon",
+      "date": "2022-12-06"
+    },
+    {
+      "slug": "my-trip-to-astana",
+      "title": "My Trip to Astana",
+      "date": "2022-11-08"
+    },
+    {
+      "slug": "you-should-start-programming",
+      "title": "You Should Start Programming",
+      "date": "2022-10-21"
+    },
+    {
+      "slug": "tapsyr-todo-app",
+      "title": "Tapsyr - Your daily dose of Tasks.",
+      "date": "2022-08-11"
+    },
+    {
+      "slug": "nextjs-is-tough",
+      "title": "Next.js is Tough",
+      "date": "2022-06-27"
+    },
+    {
+      "slug": "react-in-3-days",
+      "title": "How did I learn React in 3 days?",
+      "date": "2022-06-26"
+    }
+  ]
+}
