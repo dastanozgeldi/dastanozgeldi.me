@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { MapPinIcon } from "lucide-react";
 
@@ -28,13 +29,13 @@ export default function Page() {
           defect.kz
         </a>
         . You might wanna look at what I&apos;ve{" "}
-        <a href="/projects" className="font-mono underline">
+        <Link href="/projects" className="font-mono underline">
           built
-        </a>{" "}
+        </Link>{" "}
         or{" "}
-        <a href="/blog" className="font-mono underline">
+        <Link href="/blog" className="font-mono underline">
           wrote
-        </a>{" "}
+        </Link>{" "}
         so far.
       </p>
     </div>
