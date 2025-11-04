@@ -5,7 +5,6 @@ export type Post = {
   slug: string;
   date: string;
   title: string;
-  description?: string;
   views: number;
   viewsFormatted: string;
 };
