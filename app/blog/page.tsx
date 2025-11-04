@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import redis from "@/lib/redis";
 import { formatDate } from "@/lib/formatters";
-import { getPosts } from "@/lib/get-posts";
+import { getPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog",

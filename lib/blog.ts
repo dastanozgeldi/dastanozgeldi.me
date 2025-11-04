@@ -24,3 +24,17 @@ export const getPosts = async () => {
   });
   return posts;
 };
+
+export const getPost = async (slug: string) => {
+  const allViews: null | Views = await redis.get("views");
+  const post = postsData.posts.find((post) => post.slug === slug);
+  if (!post) {
+    return null;
+  }
+
+  const views = Number(allViews?.[post.slug] ?? 0);
+  return {
+    ...post,
+    views,
+  };
+};
