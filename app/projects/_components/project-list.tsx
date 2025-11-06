@@ -13,7 +13,7 @@ export function ProjectList() {
             <a
               className="flex flex-col space-y-1.5 mb-3"
               href={project.href}
-              target="_blank"
+              target={project.href.startsWith("http") ? "_blank" : undefined}
               rel="noopener noreferrer"
             >
               <div className="flex items-center justify-between">
