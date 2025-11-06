@@ -20,7 +20,11 @@ export default function Nav() {
         <Link href="/projects" className="font-mono tracking-tight underline">
           projects
         </Link>
-        <Link href="/resume.pdf" className="font-mono tracking-tight underline">
+        <Link
+          href="/resume.pdf"
+          target="_blank"
+          className="font-mono tracking-tight underline"
+        >
           resume
         </Link>
       </div>
