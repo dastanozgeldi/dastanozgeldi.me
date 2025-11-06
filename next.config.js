@@ -1,4 +1,4 @@
-import withMDX from "@next/mdx";
+import createMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,7 +7,14 @@ const nextConfig = {
     mdxRs: true,
   },
   images: {
-    remotePatterns: [new URL("https://utfs.io/a/u0e5kx6sa4/**")],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "utfs.io",
+        port: "",
+        pathname: "/a/u0e5kx6sa4/**",
+      },
+    ],
   },
   async rewrites() {
     return [
@@ -25,4 +32,5 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
 };
 
+const withMDX = createMDX({});
 export default withMDX(nextConfig);
