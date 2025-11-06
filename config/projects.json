@@ -17,14 +17,14 @@
     {
       "name": "holodomat",
       "description": "transfering cheap display refrigerators into vending machine competitors.",
-      "href": "/",
+      "href": "#",
       "tag": "2023-25",
       "bannerId": "UXFGY7LlErcgYMHNTvkN1DRmibKkojeBWUv9hqTl4aFwS50u"
     },
     {
       "name": "aura bank",
       "description": "track your aura with the power of AI and compete with your friends.",
-      "href": "https://aurabank.lol",
+      "href": "https://aurawallet.vercel.app",
       "tag": "my favorite",
       "bannerId": "UXFGY7LlErcgbzQfCsaKYnZxWl0wiEACdvFUX4V78NhcP5MD"
     },
