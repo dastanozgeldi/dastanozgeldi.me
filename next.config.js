@@ -7,14 +7,7 @@ const nextConfig = {
     mdxRs: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "utfs.io",
-        port: "",
-        pathname: "/a/u0e5kx6sa4/**",
-      },
-    ],
+    remotePatterns: [new URL("https://utfs.io/a/u0e5kx6sa4/**")],
   },
   async rewrites() {
     return [
