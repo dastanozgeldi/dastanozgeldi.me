@@ -3,18 +3,22 @@ import { ExternalLinkIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { site } from "@/config/site";
 import data from "@/config/projects.json";
+import Link from "next/link";
 
 export function ProjectList() {
   return (
     <ul className="space-y-4">
       {data.projects.map((project) => {
+        const isExternal = project.href.startsWith("http");
+        const LinkComponent = isExternal ? "a" : Link;
+
         return (
           <li key={project.name} className="border rounded-lg p-3">
-            <a
+            <LinkComponent
               className="flex flex-col space-y-1.5 mb-3"
               href={project.href}
-              target={project.href.startsWith("http") ? "_blank" : undefined}
-              rel="noopener noreferrer"
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
             >
               <div className="flex items-center justify-between">
                 <div>
@@ -34,7 +38,7 @@ export function ProjectList() {
               <span className="text-muted-foreground">
                 {project.description}
               </span>
-            </a>
+            </LinkComponent>
 
             <Image
               className="rounded-lg shadow-lg aspect-video object-cover"
