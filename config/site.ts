@@ -1,5 +1,5 @@
 export const site = {
-  url: "https://ozgeldi.tech",
+  url: "https://dastanozgeldi.com",
   title: "Dastan Ozgeldi",
   keywords: [
     "Дастан Өзгелді",
@@ -11,6 +11,6 @@ export const site = {
     "Node.js",
   ],
   description: "Dastan • 18 y/o • Student • Full-stack Developer",
-  image: "https://ozgeldi.tech/brand.png",
+  image: "https://dastanozgeldi.com/brand.png",
   cdn: "https://utfs.io/a/u0e5kx6sa4",
 };
