@@ -1,10 +1,18 @@
+"use client";
+
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = ["/blog", "/projects"];
 
 export default function Nav() {
+  const pathname = usePathname();
+
   return (
     <nav className="flex items-center justify-between">
-      <Link href="/" className="font-mono tracking-tight underline">
+      <Link href="/">
         <Image
           src="/pfp.jpg"
           alt="brand"
@@ -14,12 +22,18 @@ export default function Nav() {
         />
       </Link>
       <div className="flex items-center gap-4">
-        <Link href="/blog" className="font-mono tracking-tight underline">
-          blog
-        </Link>
-        <Link href="/projects" className="font-mono tracking-tight underline">
-          projects
-        </Link>
+        {links.map((link) => (
+          <Link
+            key={link}
+            href={link}
+            className={cn(
+              "font-mono tracking-tighter",
+              pathname === link && "underline underline-offset-1.5"
+            )}
+          >
+            {link}
+          </Link>
+        ))}
       </div>
     </nav>
   );
