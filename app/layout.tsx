@@ -1,12 +1,8 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { site } from "@/config/site";
-import { cn } from "@/lib/utils";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -65,12 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6 bg-linear-to-b from-background to-blue-50",
-          inter.className
-        )}
-      >
+      <body className="py-3 px-6 max-w-2xl m-auto min-h-screen flex flex-col space-y-6">
         <Nav />
         {children}
         <Footer />

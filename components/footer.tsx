@@ -2,6 +2,7 @@ export default function Footer() {
   return (
     <footer className="flex items-center justify-center">
       <span className="text-sm text-muted-foreground font-mono">
+      find me on:{" "}
         <a
           href="https://x.com/dastanozgeldi"
           target="_blank"
