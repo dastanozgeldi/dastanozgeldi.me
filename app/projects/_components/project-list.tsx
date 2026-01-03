@@ -9,7 +9,7 @@ export function ProjectList() {
   return (
     <ul className="space-y-4">
       {data.projects.map((project) => {
-        const isExternal = project.href.startsWith("http");
+        const isExternal = project.href.startsWith("https");
         const LinkComponent = isExternal ? "a" : Link;
 
         return (
@@ -32,7 +32,7 @@ export function ProjectList() {
                     </Badge>
                   )}
                 </div>
-                <ExternalLinkIcon size={16} />
+                {isExternal && <ExternalLinkIcon size={16} />}
               </div>
 
               <span className="text-muted-foreground">
